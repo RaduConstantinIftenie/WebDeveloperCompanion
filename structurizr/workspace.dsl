@@ -2,7 +2,7 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
 
   model {
     webDeveloperCompanion = softwareSystem "WebDeveloperCompanion" "Allows the user to manage and guery, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources." {
-      serverlessApplication = container "Serverless Application" "Allows the user to manage and query, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources." "Java" {
+      serverlessApplication = container "BE Serverless Service" "Allows the user to manage and query, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources." "Java" {
         tags "Application"
       }
 
@@ -16,7 +16,11 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
         tags "Application"
       }
 
-      lambdaAuthorizerService = container "Lambda Authorization Service" "Serivce that handles user authorization." "AWS Lambda Custom Authorizer" {
+      lambdaAuthorizerService = container "Lambda Authorization Service" "Service that handles user authorization." "AWS Lambda Custom Authorizer" {
+        tags "Application"
+      }
+
+      webScrapingService = container "Web Scraping Service" "Services used for scraping external data sources" "AWS Lambda" {
         tags "Application"
       }
     }
@@ -25,7 +29,7 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
     spaApplication -> lambdaAuthorizerService "Request and sends data to " "HTTPS"
     lambdaAuthorizerService -> serverlessApplication "Authorizes and sends request to " "Event Trigger"
     serverlessApplication -> database "Queries and persists data to " "SPARQL protocol"
-
+    webScrapingService -> database "Queries and persists data to " "SPARQL protocol"
 
     dev = deploymentEnvironment "Dev" {
       deploymentNode "Amazon Web Services" {
@@ -72,16 +76,16 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
               tags "Amazon Web Services - Elastic Block Store"
             }
 
+            queue = infrastructureNode "Queue" {
+              description "Messaging queue."
+              tags "Amazon Web Services - Simple Queue Service"
+            }
+
             deploymentNode "Lambda Authorizer" {
               tags "Amazon Web Services - AWS Lambda Lambda Function"
 
               containerInstance lambdaAuthorizerService
             }
-
-            # iam = infrastructureNode "IAM" {
-            #   description "Identity and access management for AWS resources."
-            #   tags "Amazon Web Services - IAM Identity Center"
-            # }
 
             deploymentNode "Api Gateway" {
               tags "Amazon Web Services - Amazon API Gateway"
@@ -110,17 +114,29 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
 
               spaApplicationInstance = containerInstance spaApplication
             }
+
+            deploymentNode "AWS Lambda" {
+              tags "Amazon Web Services - AWS Lambda Lambda Function"
+
+              webScrapingServiceInstance = containerInstance webScrapingService
+            }
           }
         }
       }
 
       route53 -> waf "Forwards request to " "HTTPS"
       waf -> spaApplicationInstance "Forwards request to " "HTTPS"
+      waf -> serverlessApplicationInstance "Forwards request to " "HTTPS with SPARQL request"
+
       spaApplicationInstance -> s3 "Reads from and writes to" "IAM Policy"
 
       serverlessApplicationInstance -> ssm "Retrieves secret data from " "IAM Policy"
       serverlessApplicationInstance -> elastiCache "Retrieves and stores cached data " "IAM policy"
       serverlessApplicationInstance -> cloudwatch "Writes logs" "IAM policy"
+      serverlessApplicationInstance -> queue "Writes messages to " "Event Message"
+
+      queue -> webScrapingServiceInstance "Provides messages to " "Event Trigger"
+      webScrapingServiceInstance -> cloudwatch "Writes logs" "IAM policy"
       
       userDirectoryServiceInstance -> ebs "Retrieves and persists data to " "IAM policy"
     }
@@ -129,7 +145,7 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
     views {
       deployment webDeveloperCompanion "Dev" "AmazonWebServicesDeployment" {
         include *
-        autolayout lr
+        # autolayout lr
 
         animation {
           route53
