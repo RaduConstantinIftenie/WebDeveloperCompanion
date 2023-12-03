@@ -1,235 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
     <title>Web Developer Companion (WED) - Technical Report</title>
   </head>
 
   <body>
     <article typeof="schema:ScholarlyArticle">
-			<header>
-				<h1 property="schema:name">Web Developer Companion (WED)</h1>
-				<div role="contentinfo">
-					<section typeof="sa:AuthorsList">
-						<h2>Authors (Web Bobber Team)</h2>
-						<ol>
-							<li typeof="sa:ContributorRole" property="schema:author">
-								<span typeof="schema:Person" resource="https://github.com/teodorfrunza">
-									<meta property="schema:givenName" content="Teodor-Octavian">
-									<meta property="schema:familyName" content="Frunza">
-									<a href="https://github.com/teodorfrunza">
-										<span property="schema:name">Frunza Teodor - Octavian</span>
-									</a>
-								</span>
-							</li>
-							<li typeof="sa:ContributorRole" property="schema:author">
-								<span typeof="schema:Person" resource="https://github.com/RaduConstantinIftenie">
-									<meta property="schema:givenName" content="Radu-Constantin">
-									<meta property="schema:familyName" content="Iftenie">
-									<a href="https://github.com/RaduConstantinIftenie">
-										<span property="schema:name">Iftenie Radu - Constantin</span>
-									</a>
-								</span>
-							</li>
-						</ol>
-						<dl>
-							<dt><h2>License</h2></dt>
-							<dd><a schema:license typeof="CreativeWork" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></dd>
-							<dt><h2>Project Wiki</h2></dt>
-							<dd><a href="https://my-blog-8g5jx.notice.site/">Wiki</a></dd>
-						</dl>
-					</section>
-				</div>
-			</header>
+      <header>
+        <h1 property="schema:name">Web Developer Companion (WED)</h1>
+        <div role="contentinfo">
+          <section typeof="sa:AuthorsList">
+            <h2>Authors (Web Bobber Team)</h2>
+            <ol>
+              <li typeof="sa:ContributorRole" property="schema:author">
+                <span
+                  typeof="schema:Person"
+                  resource="https://github.com/teodorfrunza"
+                >
+                  <meta property="schema:givenName" content="Teodor-Octavian" />
+                  <meta property="schema:familyName" content="Frunza" />
+                  <a href="https://github.com/teodorfrunza">
+                    <span property="schema:name">Frunza Teodor - Octavian</span>
+                  </a>
+                </span>
+              </li>
+              <li typeof="sa:ContributorRole" property="schema:author">
+                <span
+                  typeof="schema:Person"
+                  resource="https://github.com/RaduConstantinIftenie"
+                >
+                  <meta property="schema:givenName" content="Radu-Constantin" />
+                  <meta property="schema:familyName" content="Iftenie" />
+                  <a href="https://github.com/RaduConstantinIftenie">
+                    <span property="schema:name"
+                      >Iftenie Radu - Constantin</span
+                    >
+                  </a>
+                </span>
+              </li>
+            </ol>
+            <dl>
+              <dt><h2>License</h2></dt>
+              <dd>
+                <a
+                  schema:license
+                  typeof="CreativeWork"
+                  href="https://www.apache.org/licenses/LICENSE-2.0"
+                  >Apache License, Version 2.0</a
+                >
+              </dd>
+              <dt><h2>Project Wiki</h2></dt>
+              <dd><a href="https://my-blog-8g5jx.notice.site/">Wiki</a></dd>
+            </dl>
+          </section>
+        </div>
+      </header>
 
-			<section id="abstract" typeof="sa:Abstract" role="doc-abstract">
-				<h2>Abstract</h2>
-				<p>
-					This project aims to create an ontology based on the linked data principles providing modern solutions for querying programming data related to 
-					web development. It provides multiple methods of interactions such as UI/UX in react and a SPARQL endpoint, facilitating data ingestion and exporting
-					for any kind of systems.
-				</p>
-			</section>
+      <section id="abstract" typeof="sa:Abstract" role="doc-abstract">
+        <h2>Abstract</h2>
+        <p>
+          This project aims to create an ontology based on the linked data
+          principles providing modern solutions for querying programming data
+          related to web development. It provides multiple methods of
+          interactions such as UI/UX in react and a SPARQL endpoint,
+          facilitating data ingestion and exporting for any kind of systems.
+        </p>
+      </section>
 
-			<section id="introduction" typeof="sa:Introduction" role="doc-introduction">
-				<h2>Introduction</h2>
-				<p>
-					In the current age of technology, the web technologies advance at an exponential pace. Members of the web developing community, regardless of technologies 
-					or seniority, constantly seek to stay up-to-date to the latest developments, features and achievements in the field. However, in the late years, it has 
-					become increasingly difficult to keep up with the big number of new technologies and advancements, most of the time leading to inaccurate, outdated or incomplete 
-					data.
-				</p>
-				<p>
-					Our solution aims to help developers and web technologies passionates stay up-to-date with the latest technologies by created service-oriented system that 
-					manages and models the widely available technical context. Furthermore, by using the linked data principles it aims to connect multiple sources of information
-					and validate, enrich and standardize the provided data. Moreover, by providing both a modern UI and a SPARQL endpoint we enable both user and software interaction.
-				</p>
-			</section>
+      <section
+        id="introduction"
+        typeof="sa:Introduction"
+        role="doc-introduction"
+      >
+        <h2>Introduction</h2>
+        <p>
+          In the current age of technology, the web technologies advance at an
+          exponential pace. Members of the web developing community, regardless
+          of technologies or seniority, constantly seek to stay up-to-date to
+          the latest developments, features and achievements in the field.
+          However, in the late years, it has become increasingly difficult to
+          keep up with the big number of new technologies and advancements, most
+          of the time leading to inaccurate, outdated or incomplete data.
+        </p>
+        <p>
+          Our solution aims to help developers and web technologies passionates
+          stay up-to-date with the latest technologies by created
+          service-oriented system that manages and models the widely available
+          technical context. Furthermore, by using the linked data principles it
+          aims to connect multiple sources of information and validate, enrich
+          and standardize the provided data. Moreover, by providing both a
+          modern UI and a SPARQL endpoint we enable both user and software
+          interaction.
+        </p>
+      </section>
 
-			<section>
-				<h2>Architecture</h2>
-				<section>
-					<h3>Front-end</h3>
-					<p>Front-end's architecture aims to provide a modern user experience by using a top of the line UI. The project is written using React and using the best practices
-						regarding folder structure and component composition and injection.
-					</p>
-				</section>
-				
-				<section>
-					<h3>Back-end</h3>
-					<p>Back-end's architecture follows a serverless approach using JAVA and Node.js and provides a highly scalable, available solution for our application.
-						The projects have n-tier internal architecture for the JAVA projects and pseudo-DDD for Node.js one. The scrapper will be written in python. 
-					</p>
-				</section>
-				<section>
-					<h3>Infrastructure</h3>
-					<p>The infrastructure is bound to the AWS cloud provider and offers a serverless approach. Furthermore, we use several components that assure the Security
-						and privacy of our solution.
-					</p>
-				</section>
-			</section>
+      <section>
+        <h2>Architecture</h2>
+        <section>
+          <h3>Front-end</h3>
+          <p>
+            Front-end's architecture aims to provide a modern user experience by
+            using a top of the line UI. The project is written using React and
+            using the best practices regarding folder structure and component
+            composition and injection.
+          </p>
+        </section>
 
-			<section>
-				<h2>Deployment and Technologies Stack</h2>
-				<section>
-					<h3>Deployment</h3>
-					<ul>
-						<li>The deployment is done on AWS platform and can be observed in the deployment UML.</li> 
-						<li>All the infrastructure resides in a VPC.</li>
-						<li>Serverless architecture.</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Technologies Stack</h3>
-					<ol>
-						<li>
-							<section>
-								<h4>Front-end Technologies</h4>
-								<ul>
-									<li>React</li>
-									<li>SCSS</li>
-									<li>ATND</li>
-									<li>MOBX</li>
-									<li>Typescript</li>
-								</ul>
-							</section>
-						</li>
-						<li>
-							<section>
-								<h4>Back-end Technologies</h4>
-								<ul>
-									<li>Java</li>
-									<li>Node.js</li>
-									<li>Typescript</li>
-									<li>Python</li>
-									<li>SPARQL</li>
-								</ul>
-							</section>
-						</li>
-						<li>
-							<section>
-								<h4>Data Management Systems</h4>
-								<ul>
-									<li>AWS Neptune</li>
-									<li>Elasticache Redis</li>
-								</ul>
-						</li>
-						<li>
-							<section>
-								<h4>Testing</h4>
-								<ul>
-									<li>JUnit</li>
-									<li>Mockito</li>
-									<li>Jest</li>
-								</ul>
-						</li>
-						<li>
-							<section>
-								<h4>Security</h4>
-								<ul>
-									<li>WAF</li>
-									<li>Api Gateway</li>
-									<li>Encryption at rest on S3</li>
-									<li>Keycloack</li>
-									<li>JWT</li>
-									<li>Api Gateway Api Key</li>
-									<li>SSM</li>
-								</ul>
-						</li>
-					</ol>
-				</section>
+        <section>
+          <h3>Back-end</h3>
+          <p>
+            Back-end's architecture follows a serverless approach using JAVA and
+            Node.js and provides a highly scalable, available solution for our
+            application. The projects have n-tier internal architecture for the
+            JAVA projects and pseudo-DDD for Node.js one. The scrapper will be
+            written in python.
+          </p>
+        </section>
+        <section>
+          <h3>Infrastructure</h3>
+          <p>
+            The infrastructure is bound to the AWS cloud provider and offers a
+            serverless approach. Furthermore, we use several components that
+            assure the Security and privacy of our solution.
+          </p>
+        </section>
+      </section>
 
-				<section>
-					<h2>Data Models</h2>
-					<p>The application's main goal is to handle data in a standardized way, including both user inserted and external data. The user data is mainly handled by
-						Keycloack and will be stored in its internal state and storage system, while the external data will be validated, cleaned and stored in AWS Neptune as RDF data.
-						The external data will be retrieved from multiple sources using a python service that will automatically scrape webpages. Additionally, the data will be cleaned, formatted
-						and grouped into different categories.
-					</p>
-				</section>
-			</section>
+      <section>
+        <h2>Deployment and Technologies Stack</h2>
+        <section>
+          <h3>Deployment</h3>
+          <ul>
+            <li>
+              The deployment is done on AWS platform and can be observed in the
+              deployment UML.
+            </li>
+            <li>All the infrastructure resides in a VPC.</li>
+            <li>Serverless architecture.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Technologies Stack</h3>
+          <ol>
+            <li>
+              <section>
+                <h4>Front-end Technologies</h4>
+                <ul>
+                  <li>React</li>
+                  <li>SCSS</li>
+                  <li>ATND</li>
+                  <li>MOBX</li>
+                  <li>Typescript</li>
+                </ul>
+              </section>
+            </li>
+            <li>
+              <section>
+                <h4>Back-end Technologies</h4>
+                <ul>
+                  <li>Java</li>
+                  <li>Node.js</li>
+                  <li>Typescript</li>
+                  <li>Python</li>
+                  <li>SPARQL</li>
+                </ul>
+              </section>
+            </li>
+            <li>
+              <section>
+                <h4>Data Management Systems</h4>
+                <ul>
+                  <li>AWS Neptune</li>
+                  <li>Elasticache Redis</li>
+                </ul>
+              </section>
+            </li>
+            <li>
+              <section>
+                <h4>Testing</h4>
+                <ul>
+                  <li>JUnit</li>
+                  <li>Mockito</li>
+                  <li>Jest</li>
+                </ul>
+              </section>
+            </li>
+            <li>
+              <section>
+                <h4>Security</h4>
+                <ul>
+                  <li>WAF</li>
+                  <li>Api Gateway</li>
+                  <li>Encryption at rest on S3</li>
+                  <li>Keycloack</li>
+                  <li>JWT</li>
+                  <li>Api Gateway Api Key</li>
+                  <li>SSM</li>
+                </ul>
+              </section>
+            </li>
+          </ol>
+        </section>
 
-			<section id="conclusion" typeof="sa:Conclusion" role="doc-conclusion">
-				<h2>Conclusion</h2>
-				<p>
-					As we are looking ahead to the implementation of the project, at this point in time, we conclude by our wish to build a robust, highly scalable, highly available service with a great
-					user experience that will be used by both users and software alike.
-				</p>
-			</section>
+        <section>
+          <h2>Data Models</h2>
+          <p>
+            The application's main goal is to handle data in a standardized way,
+            including both user inserted and external data. The user data is
+            mainly handled by Keycloack and will be stored in its internal state
+            and storage system, while the external data will be validated,
+            cleaned and stored in AWS Neptune as RDF data. The external data
+            will be retrieved from multiple sources using a python service that
+            will automatically scrape webpages. Additionally, the data will be
+            cleaned, formatted and grouped into different categories.
+          </p>
+        </section>
+      </section>
 
-			<section id="bibliography" typeof="sa:Bibliography" role="doc-bibliography">
-				<h2>References</h2>
-				<ol>
-					<li typeOf="schema:WebPage" role="doc-biblioentry"
-							resource="react" property="schema:citation"
-							id="react">
-							<cite property="schema:name">
-								<a href="https://react.dev/">React</a>
-							</cite>
-							<span property="schema:potentialAction" typeof="schema:ReadAction">
-								<meta property="schema:actionStatus" content="CompletedActionStatus">
-								(accessed on
-								<time property="schema:endTime" datatype="xsd:date" datetime="2023-12-03">3 Dec 2023</time>)
-							</span>
-					</li>
-					<li typeOf="schema:WebPage" role="doc-biblioentry" resource="https://aws.amazon.com/free/"
-						property="schema:citation" id="aws-tier">
-						<cite property="schema:name">
-								<a href="https://aws.amazon.com/free/">AWS Tier</a>
-						</cite>
-						<span property="schema:potentialAction" typeof="schema:ReadAction">
-							<meta property="schema:actionStatus" content="CompletedActionStatus">
-							(accessed on
-							<time property="schema:endTime" datatype="xsd:date" datetime="2023-12-03">03 Dec 2023</time>)
-						</span>
-					</li>
-					<li typeOf="schema:WebPage" role="doc-biblioentry"
-							resource="https://junit.org/junit5/docs/current/user-guide/" property="schema:citation"
-							id="spring-security">
-							<cite property="schema:name">
-								<a href="https://junit.org/junit5/docs/current/user-guide/">JUnit</a>
-							</cite>
-							<span property="schema:potentialAction" typeof="schema:ReadAction">
-								<meta property="schema:actionStatus" content="CompletedActionStatus">
-								(accessed on
-								<time property="schema:endTime" datatype="xsd:date" datetime="2023-12-03">3 Dec 2023</time>)
-							</span>
-					</li>
-					<li typeOf="schema:WebPage" role="doc-biblioentry"
-						resource="https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html"
-						property="schema:citation" id="spring-security">
-						<cite property="schema:name">
-							<a href="https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html">Mockito</a>
-						</cite>
-						<span property="schema:potentialAction" typeof="schema:ReadAction">
-							<meta property="schema:actionStatus" content="CompletedActionStatus">
-							(accessed on
-							<time property="schema:endTime" datatype="xsd:date" datetime="2023-12-03">3 Dec 2023</time>)
-						</span>
-					</li>
-				</ol>
-			</section>
+      <section id="conclusion" typeof="sa:Conclusion" role="doc-conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          As we are looking ahead to the implementation of the project, at this
+          point in time, we conclude by our wish to build a robust, highly
+          scalable, highly available service with a great user experience that
+          will be used by both users and software alike.
+        </p>
+      </section>
+
+      <section
+        id="bibliography"
+        typeof="sa:Bibliography"
+        role="doc-bibliography"
+      >
+        <h2>References</h2>
+        <ol>
+          <li
+            typeOf="schema:WebPage"
+            role="doc-biblioentry"
+            resource="react"
+            property="schema:citation"
+            id="react"
+          >
+            <cite property="schema:name">
+              <a href="https://react.dev/">React</a>
+            </cite>
+            <span property="schema:potentialAction" typeof="schema:ReadAction">
+              <meta
+                property="schema:actionStatus"
+                content="CompletedActionStatus"
+              />
+              (accessed on
+              <time
+                property="schema:endTime"
+                datatype="xsd:date"
+                datetime="2023-12-03"
+                >3 Dec 2023</time
+              >)
+            </span>
+          </li>
+          <li
+            typeOf="schema:WebPage"
+            role="doc-biblioentry"
+            resource="https://aws.amazon.com/free/"
+            property="schema:citation"
+            id="aws-tier"
+          >
+            <cite property="schema:name">
+              <a href="https://aws.amazon.com/free/">AWS Tier</a>
+            </cite>
+            <span property="schema:potentialAction" typeof="schema:ReadAction">
+              <meta
+                property="schema:actionStatus"
+                content="CompletedActionStatus"
+              />
+              (accessed on
+              <time
+                property="schema:endTime"
+                datatype="xsd:date"
+                datetime="2023-12-03"
+                >03 Dec 2023</time
+              >)
+            </span>
+          </li>
+          <li
+            typeOf="schema:WebPage"
+            role="doc-biblioentry"
+            resource="https://junit.org/junit5/docs/current/user-guide/"
+            property="schema:citation"
+            id="spring-security"
+          >
+            <cite property="schema:name">
+              <a href="https://junit.org/junit5/docs/current/user-guide/"
+                >JUnit</a
+              >
+            </cite>
+            <span property="schema:potentialAction" typeof="schema:ReadAction">
+              <meta
+                property="schema:actionStatus"
+                content="CompletedActionStatus"
+              />
+              (accessed on
+              <time
+                property="schema:endTime"
+                datatype="xsd:date"
+                datetime="2023-12-03"
+                >3 Dec 2023</time
+              >)
+            </span>
+          </li>
+          <li
+            typeOf="schema:WebPage"
+            role="doc-biblioentry"
+            resource="https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html"
+            property="schema:citation"
+            id="spring-security"
+          >
+            <cite property="schema:name">
+              <a
+                href="https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html"
+                >Mockito</a
+              >
+            </cite>
+            <span property="schema:potentialAction" typeof="schema:ReadAction">
+              <meta
+                property="schema:actionStatus"
+                content="CompletedActionStatus"
+              />
+              (accessed on
+              <time
+                property="schema:endTime"
+                datatype="xsd:date"
+                datetime="2023-12-03"
+                >3 Dec 2023</time
+              >)
+            </span>
+          </li>
+        </ol>
+      </section>
     </article>
   </body>
 </html>
