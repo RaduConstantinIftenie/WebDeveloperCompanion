@@ -2,9 +2,10 @@
   "id" : 1,
   "name" : "WebDeveloperCompanion",
   "description" : "Deployment diagram",
-  "lastModifiedDate" : "2023-12-03T19:13:14Z",
+  "lastModifiedDate" : "2023-12-03T19:34:37Z",
+  "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlICJXZWJEZXZlbG9wZXJDb21wYW5pb24iICJEZXBsb3ltZW50IGRpYWdyYW0iIHsKCiAgbW9kZWwgewogICAgd2ViRGV2ZWxvcGVyQ29tcGFuaW9uID0gc29mdHdhcmVTeXN0ZW0gIldlYkRldmVsb3BlckNvbXBhbmlvbiIgIkFsbG93cyB0aGUgdXNlciB0byBtYW5hZ2UgYW5kIGd1ZXJ5LCBwdWJsaWMgdGVjaG5pY2FsIGNvbnRlbnQgcmVnYXJkaW5nIFdlYiBkZXZlbG9wbWVudCAoc3VjaCBhcyB0dXRvcmlhbHMsIHByZXNlbnRhdGlvbnMgZXRjLikgZnJvbSBtdWx0aXBsZSBzb3VyY2VzLiIgewogICAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb24gPSBjb250YWluZXIgIkJFIFNlcnZlcmxlc3MgU2VydmljZSIgIkFsbG93cyB0aGUgdXNlciB0byBtYW5hZ2UgYW5kIHF1ZXJ5LCBwdWJsaWMgdGVjaG5pY2FsIGNvbnRlbnQgcmVnYXJkaW5nIFdlYiBkZXZlbG9wbWVudCAoc3VjaCBhcyB0dXRvcmlhbHMsIHByZXNlbnRhdGlvbnMgZXRjLikgZnJvbSBtdWx0aXBsZSBzb3VyY2VzLiIgIkphdmEiIHsKICAgICAgICB0YWdzICJBcHBsaWNhdGlvbiIKICAgICAgfQoKICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIlJERiBEYXRhYmFzZSIgIlN0b3JlcyBpbmZvcm1hdGlvbiBpbiBSREYgZm9ybWF0IHJlZ2FyZGluZyBXZWIgZGV2ZWxvcG1lbnQgdGVjaG5pY2FsIGNvbnRlbnQuIiAiUkRGIERhdGFiYXNlIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KCiAgICAgIHVzZXJEaXJlY3RvcnlTZXJ2aWNlID0gY29udGFpbmVyICJVc2VyIEF1dGhlbnRpY2F0aW9uIFNlcnZpY2UiICJTZXJ2aWNlIHRoYXQgaGFuZGxlcyB1c2VyIGF1dGhlbnRpY2F0aW9uIGFuZCBob2xkcyBzZW5zaXRpdmUgdXNlciBkYXRhIGluIGEgZGlyZWN0b3J5LiIgIktleWNsb2FjayIKICAgIAogICAgICBzcGFBcHBsaWNhdGlvbiA9IGNvbnRhaW5lciAiU1BBIEFwcGxpY2F0aW9uIiAiRnJvbnQtZW5kIGFwcGxpY2F0aW9uIHRoYXQgcHJvdmlkZXMgYW4gdXNlciBmcmllbmRseSBpbnRlcmZhY2UgZm9yIFdlYkRldmVsb3BlckNvbXBhbmlvbiBhcHBsaWNhdGlvbi4iICJSZWFjdCB3aXRoIFR5cGVzY3JpcHQiIHsKICAgICAgICB0YWdzICJBcHBsaWNhdGlvbiIKICAgICAgfQoKICAgICAgbGFtYmRhQXV0aG9yaXplclNlcnZpY2UgPSBjb250YWluZXIgIkxhbWJkYSBBdXRob3JpemF0aW9uIFNlcnZpY2UiICJTZXJ2aWNlIHRoYXQgaGFuZGxlcyB1c2VyIGF1dGhvcml6YXRpb24uIiAiQVdTIExhbWJkYSBDdXN0b20gQXV0aG9yaXplciIgewogICAgICAgIHRhZ3MgIkFwcGxpY2F0aW9uIgogICAgICB9CgogICAgICB3ZWJTY3JhcGluZ1NlcnZpY2UgPSBjb250YWluZXIgIldlYiBTY3JhcGluZyBTZXJ2aWNlIiAiU2VydmljZXMgdXNlZCBmb3Igc2NyYXBpbmcgZXh0ZXJuYWwgZGF0YSBzb3VyY2VzIiAiQVdTIExhbWJkYSIgewogICAgICAgIHRhZ3MgIkFwcGxpY2F0aW9uIgogICAgICB9CiAgICB9CgogICAgc3BhQXBwbGljYXRpb24gLT4gdXNlckRpcmVjdG9yeVNlcnZpY2UgIkF1dGhlbnRpY2F0ZXMgdXNlciAiICJIVFRQUyIKICAgIHNwYUFwcGxpY2F0aW9uIC0+IGxhbWJkYUF1dGhvcml6ZXJTZXJ2aWNlICJSZXF1ZXN0IGFuZCBzZW5kcyBkYXRhIHRvICIgIkhUVFBTIgogICAgbGFtYmRhQXV0aG9yaXplclNlcnZpY2UgLT4gc2VydmVybGVzc0FwcGxpY2F0aW9uICJBdXRob3JpemVzIGFuZCBzZW5kcyByZXF1ZXN0IHRvICIgIkV2ZW50IFRyaWdnZXIiCiAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb24gLT4gZGF0YWJhc2UgIlF1ZXJpZXMgYW5kIHBlcnNpc3RzIGRhdGEgdG8gIiAiU1BBUlFMIHByb3RvY29sIgogICAgd2ViU2NyYXBpbmdTZXJ2aWNlIC0+IGRhdGFiYXNlICJRdWVyaWVzIGFuZCBwZXJzaXN0cyBkYXRhIHRvICIgIlNQQVJRTCBwcm90b2NvbCIKCiAgICBkZXYgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkRldiIgewogICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIFdlYiBTZXJ2aWNlcyIgewogICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZCIKCiAgICAgICAgcmVnaW9uID0gZGVwbG95bWVudE5vZGUgIkVVLU5vcnRoLTEiIHsKICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBSZWdpb24iCgogICAgICAgICAgcm91dGU1MyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUm91dGUgNTMiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhpZ2hseSBhdmFpbGFibGUgYW5kIHNjYWxhYmxlIGNsb3VkIEROUyBzZXJ2aWNlLiIKICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJvdXRlIDUzIgogICAgICAgICAgfQoKICAgICAgICAgIHdhZiA9IGluZnJhc3RydWN0dXJlTm9kZSAiV0FGIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIaWdobHkgc2VjdXJlIHdlYiBhcHBsaWNhdGlvbiBmaXJld2FsbC4iCiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBXQUYiCiAgICAgICAgICB9CgogICAgICAgICAgZGVwbG95bWVudE5vZGUgIlZQQyIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gVmlydHVhbCBQcml2YXRlIENsb3VkIgoKICAgICAgICAgICAgc3NtID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJTU00iIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3lzdGVtIG1hbmFnZXIgd2l0aCBzZWNyZXQgY29uZmlndXJhdGlvbiBzdG9yYWdlLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU3lzdGVtcyBNYW5hZ2VyIgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGFzdGlDYWNoZSA9IGluZnJhc3RydWN0dXJlTm9kZSAiRWxhc3RpQ2FjaGUgZm9yIFJlZGlzIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkNhY2hpbmcgc3lzdGVtIHVzaW5nIHJlZGlzLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpQ2FjaGUgRWxhc3RpQ2FjaGUgZm9yIFJlZGlzIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjbG91ZHdhdGNoID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkxvZ2dpbmcgc3lzdGVtIGZvciBjbG91ZCByZXNvdXJjZXMuIgogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZFdhdGNoIgogICAgICAgICAgICB9CgogICAgICAgICAgICBzMyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUzMiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiUHJpdmF0ZSBTMyBidWNrZXQgZm9yIFNQQSBhcGxpY2F0aW9uLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU2ltcGxlIFN0b3JhZ2UgU2VydmljZSBCdWNrZXQiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVicyA9IGluZnJhc3RydWN0dXJlTm9kZSAiRUJTIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlBoaXNpY2FsIGRyaXZlIG1lbW9yeSBmb3IgRUMyIgogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFbGFzdGljIEJsb2NrIFN0b3JlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBxdWV1ZSA9IGluZnJhc3RydWN0dXJlTm9kZSAiUXVldWUiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiTWVzc2FnaW5nIHF1ZXVlLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU2ltcGxlIFF1ZXVlIFNlcnZpY2UiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJMYW1iZGEgQXV0aG9yaXplciIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgTGFtYmRhIExhbWJkYSBGdW5jdGlvbiIKCiAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbGFtYmRhQXV0aG9yaXplclNlcnZpY2UKICAgICAgICAgICAgfQoKICAgICAgICAgICAgIyBpYW0gPSBpbmZyYXN0cnVjdHVyZU5vZGUgIklBTSIgewogICAgICAgICAgICAjICAgZGVzY3JpcHRpb24gIklkZW50aXR5IGFuZCBhY2Nlc3MgbWFuYWdlbWVudCBmb3IgQVdTIHJlc291cmNlcy4iCiAgICAgICAgICAgICMgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gSUFNIElkZW50aXR5IENlbnRlciIKICAgICAgICAgICAgIyB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQXBpIEdhdGV3YXkiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQW1hem9uIEFQSSBHYXRld2F5IgoKICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQVdTIExhbWJkYSIgewogICAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBMYW1iZGEgTGFtYmRhIEZ1bmN0aW9uIgoKICAgICAgICAgICAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugc2VydmVybGVzc0FwcGxpY2F0aW9uCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIE5lcHR1bmUiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gTmVwdHVuZSIKCiAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZGF0YWJhc2UKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkFtYXpvbiBFQzIiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRUMyIgoKICAgICAgICAgICAgICB1c2VyRGlyZWN0b3J5U2VydmljZUluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2UgdXNlckRpcmVjdG9yeVNlcnZpY2UKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkFXUyBDbG91ZGZyb250IiB7CiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIENsb3VkRnJvbnQiCgogICAgICAgICAgICAgIHNwYUFwcGxpY2F0aW9uSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzcGFBcHBsaWNhdGlvbgogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQVdTIExhbWJkYSIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgTGFtYmRhIExhbWJkYSBGdW5jdGlvbiIKCiAgICAgICAgICAgICAgd2ViU2NyYXBpbmdTZXJ2aWNlSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSB3ZWJTY3JhcGluZ1NlcnZpY2UKICAgICAgICAgICAgfQogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfQoKICAgICAgcm91dGU1MyAtPiB3YWYgIkZvcndhcmRzIHJlcXVlc3QgdG8gIiAiSFRUUFMiCiAgICAgIHdhZiAtPiBzcGFBcHBsaWNhdGlvbkluc3RhbmNlICJGb3J3YXJkcyByZXF1ZXN0IHRvICIgIkhUVFBTIgogICAgICB3YWYgLT4gc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgIkZvcndhcmRzIHJlcXVlc3QgdG8gIiAiSFRUUFMgd2l0aCBTUEFSUUwgcmVxdWVzdCIKCiAgICAgIHNwYUFwcGxpY2F0aW9uSW5zdGFuY2UgLT4gczMgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIgIklBTSBQb2xpY3kiCgogICAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb25JbnN0YW5jZSAtPiBzc20gIlJldHJpZXZlcyBzZWNyZXQgZGF0YSBmcm9tICIgIklBTSBQb2xpY3kiCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IGVsYXN0aUNhY2hlICJSZXRyaWV2ZXMgYW5kIHN0b3JlcyBjYWNoZWQgZGF0YSAiICJJQU0gcG9saWN5IgogICAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb25JbnN0YW5jZSAtPiBjbG91ZHdhdGNoICJXcml0ZXMgbG9ncyIgIklBTSBwb2xpY3kiCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IHF1ZXVlICJXcml0ZXMgbWVzc2FnZXMgdG8gIiAiRXZlbnQgTWVzc2FnZSIKCiAgICAgIHF1ZXVlIC0+IHdlYlNjcmFwaW5nU2VydmljZUluc3RhbmNlICJQcm92aWRlcyBtZXNzYWdlcyB0byAiICJFdmVudCBUcmlnZ2VyIgogICAgICB3ZWJTY3JhcGluZ1NlcnZpY2VJbnN0YW5jZSAtPiBjbG91ZHdhdGNoICJXcml0ZXMgbG9ncyIgIklBTSBwb2xpY3kiCiAgICAgIAogICAgICB1c2VyRGlyZWN0b3J5U2VydmljZUluc3RhbmNlIC0+IGVicyAiUmV0cmlldmVzIGFuZCBwZXJzaXN0cyBkYXRhIHRvICIgIklBTSBwb2xpY3kiCiAgICB9CiAgfQoKICAgIHZpZXdzIHsKICAgICAgZGVwbG95bWVudCB3ZWJEZXZlbG9wZXJDb21wYW5pb24gIkRldiIgIkFtYXpvbldlYlNlcnZpY2VzRGVwbG95bWVudCIgewogICAgICAgIGluY2x1ZGUgKgogICAgICAgICMgYXV0b2xheW91dCBscgoKICAgICAgICBhbmltYXRpb24gewogICAgICAgICAgcm91dGU1MwogICAgICAgIH0KICAgICAgfQoKICAgICAgc3R5bGVzIHsKICAgICAgICBlbGVtZW50ICJFbGVtZW50IiB7CiAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICB9CiAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICB9CiAgICAgICAgZWxlbWVudCAiQXBwbGljYXRpb24iIHsKICAgICAgICAgIGJhY2tncm91bmQgI2ZmZmZmZgogICAgICAgIH0KICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICB9CiAgICAgIH0KCiAgICAgIHRoZW1lcyBodHRwczovL3N0YXRpYy5zdHJ1Y3R1cml6ci5jb20vdGhlbWVzL2FtYXpvbi13ZWItc2VydmljZXMtMjAyMy4wMS4zMS90aGVtZS5qc29uCiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgIHNjb3BlIHNvZnR3YXJlc3lzdGVtCiAgICB9Cn0K"
+    "structurizr.dsl" : "d29ya3NwYWNlICJXZWJEZXZlbG9wZXJDb21wYW5pb24iICJEZXBsb3ltZW50IGRpYWdyYW0iIHsKCiAgbW9kZWwgewogICAgd2ViRGV2ZWxvcGVyQ29tcGFuaW9uID0gc29mdHdhcmVTeXN0ZW0gIldlYkRldmVsb3BlckNvbXBhbmlvbiIgIkFsbG93cyB0aGUgdXNlciB0byBtYW5hZ2UgYW5kIGd1ZXJ5LCBwdWJsaWMgdGVjaG5pY2FsIGNvbnRlbnQgcmVnYXJkaW5nIFdlYiBkZXZlbG9wbWVudCAoc3VjaCBhcyB0dXRvcmlhbHMsIHByZXNlbnRhdGlvbnMgZXRjLikgZnJvbSBtdWx0aXBsZSBzb3VyY2VzLiIgewogICAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb24gPSBjb250YWluZXIgIkJFIFNlcnZlcmxlc3MgU2VydmljZSIgIkFsbG93cyB0aGUgdXNlciB0byBtYW5hZ2UgYW5kIHF1ZXJ5LCBwdWJsaWMgdGVjaG5pY2FsIGNvbnRlbnQgcmVnYXJkaW5nIFdlYiBkZXZlbG9wbWVudCAoc3VjaCBhcyB0dXRvcmlhbHMsIHByZXNlbnRhdGlvbnMgZXRjLikgZnJvbSBtdWx0aXBsZSBzb3VyY2VzLiIgIkphdmEiIHsKICAgICAgICB0YWdzICJBcHBsaWNhdGlvbiIKICAgICAgfQoKICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIlJERiBEYXRhYmFzZSIgIlN0b3JlcyBpbmZvcm1hdGlvbiBpbiBSREYgZm9ybWF0IHJlZ2FyZGluZyBXZWIgZGV2ZWxvcG1lbnQgdGVjaG5pY2FsIGNvbnRlbnQuIiAiUkRGIERhdGFiYXNlIiB7CiAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgIH0KCiAgICAgIHVzZXJEaXJlY3RvcnlTZXJ2aWNlID0gY29udGFpbmVyICJVc2VyIEF1dGhlbnRpY2F0aW9uIFNlcnZpY2UiICJTZXJ2aWNlIHRoYXQgaGFuZGxlcyB1c2VyIGF1dGhlbnRpY2F0aW9uIGFuZCBob2xkcyBzZW5zaXRpdmUgdXNlciBkYXRhIGluIGEgZGlyZWN0b3J5LiIgIktleWNsb2FjayIKICAgIAogICAgICBzcGFBcHBsaWNhdGlvbiA9IGNvbnRhaW5lciAiU1BBIEFwcGxpY2F0aW9uIiAiRnJvbnQtZW5kIGFwcGxpY2F0aW9uIHRoYXQgcHJvdmlkZXMgYW4gdXNlciBmcmllbmRseSBpbnRlcmZhY2UgZm9yIFdlYkRldmVsb3BlckNvbXBhbmlvbiBhcHBsaWNhdGlvbi4iICJSZWFjdCB3aXRoIFR5cGVzY3JpcHQiIHsKICAgICAgICB0YWdzICJBcHBsaWNhdGlvbiIKICAgICAgfQoKICAgICAgbGFtYmRhQXV0aG9yaXplclNlcnZpY2UgPSBjb250YWluZXIgIkxhbWJkYSBBdXRob3JpemF0aW9uIFNlcnZpY2UiICJTZXJ2aWNlIHRoYXQgaGFuZGxlcyB1c2VyIGF1dGhvcml6YXRpb24uIiAiQVdTIExhbWJkYSBDdXN0b20gQXV0aG9yaXplciIgewogICAgICAgIHRhZ3MgIkFwcGxpY2F0aW9uIgogICAgICB9CgogICAgICB3ZWJTY3JhcGluZ1NlcnZpY2UgPSBjb250YWluZXIgIldlYiBTY3JhcGluZyBTZXJ2aWNlIiAiU2VydmljZXMgdXNlZCBmb3Igc2NyYXBpbmcgZXh0ZXJuYWwgZGF0YSBzb3VyY2VzIiAiQVdTIExhbWJkYSIgewogICAgICAgIHRhZ3MgIkFwcGxpY2F0aW9uIgogICAgICB9CiAgICB9CgogICAgc3BhQXBwbGljYXRpb24gLT4gdXNlckRpcmVjdG9yeVNlcnZpY2UgIkF1dGhlbnRpY2F0ZXMgdXNlciAiICJIVFRQUyIKICAgIHNwYUFwcGxpY2F0aW9uIC0+IGxhbWJkYUF1dGhvcml6ZXJTZXJ2aWNlICJSZXF1ZXN0IGFuZCBzZW5kcyBkYXRhIHRvICIgIkhUVFBTIgogICAgbGFtYmRhQXV0aG9yaXplclNlcnZpY2UgLT4gc2VydmVybGVzc0FwcGxpY2F0aW9uICJBdXRob3JpemVzIGFuZCBzZW5kcyByZXF1ZXN0IHRvICIgIkV2ZW50IFRyaWdnZXIiCiAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb24gLT4gZGF0YWJhc2UgIlF1ZXJpZXMgYW5kIHBlcnNpc3RzIGRhdGEgdG8gIiAiU1BBUlFMIHByb3RvY29sIgogICAgd2ViU2NyYXBpbmdTZXJ2aWNlIC0+IGRhdGFiYXNlICJRdWVyaWVzIGFuZCBwZXJzaXN0cyBkYXRhIHRvICIgIlNQQVJRTCBwcm90b2NvbCIKCiAgICBkZXYgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkRldiIgewogICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIFdlYiBTZXJ2aWNlcyIgewogICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZCIKCiAgICAgICAgcmVnaW9uID0gZGVwbG95bWVudE5vZGUgIkVVLU5vcnRoLTEiIHsKICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBSZWdpb24iCgogICAgICAgICAgcm91dGU1MyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUm91dGUgNTMiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhpZ2hseSBhdmFpbGFibGUgYW5kIHNjYWxhYmxlIGNsb3VkIEROUyBzZXJ2aWNlLiIKICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJvdXRlIDUzIgogICAgICAgICAgfQoKICAgICAgICAgIHdhZiA9IGluZnJhc3RydWN0dXJlTm9kZSAiV0FGIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIaWdobHkgc2VjdXJlIHdlYiBhcHBsaWNhdGlvbiBmaXJld2FsbC4iCiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBXQUYiCiAgICAgICAgICB9CgogICAgICAgICAgZGVwbG95bWVudE5vZGUgIlZQQyIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gVmlydHVhbCBQcml2YXRlIENsb3VkIgoKICAgICAgICAgICAgc3NtID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJTU00iIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3lzdGVtIG1hbmFnZXIgd2l0aCBzZWNyZXQgY29uZmlndXJhdGlvbiBzdG9yYWdlLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU3lzdGVtcyBNYW5hZ2VyIgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGFzdGlDYWNoZSA9IGluZnJhc3RydWN0dXJlTm9kZSAiRWxhc3RpQ2FjaGUgZm9yIFJlZGlzIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkNhY2hpbmcgc3lzdGVtIHVzaW5nIHJlZGlzLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpQ2FjaGUgRWxhc3RpQ2FjaGUgZm9yIFJlZGlzIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjbG91ZHdhdGNoID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkxvZ2dpbmcgc3lzdGVtIGZvciBjbG91ZCByZXNvdXJjZXMuIgogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZFdhdGNoIgogICAgICAgICAgICB9CgogICAgICAgICAgICBzMyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUzMiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiUHJpdmF0ZSBTMyBidWNrZXQgZm9yIFNQQSBhcGxpY2F0aW9uLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU2ltcGxlIFN0b3JhZ2UgU2VydmljZSBCdWNrZXQiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVicyA9IGluZnJhc3RydWN0dXJlTm9kZSAiRUJTIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlBoaXNpY2FsIGRyaXZlIG1lbW9yeSBmb3IgRUMyIgogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFbGFzdGljIEJsb2NrIFN0b3JlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBxdWV1ZSA9IGluZnJhc3RydWN0dXJlTm9kZSAiUXVldWUiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiTWVzc2FnaW5nIHF1ZXVlLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU2ltcGxlIFF1ZXVlIFNlcnZpY2UiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGV2ZW50QnJpZGdlID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJFdmVudCBCcmlkZ2UiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU2NoZWR1bGVyIGZvciBhdXRvbWF0ZWQgZGFlbW9ucy4iCiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEV2ZW50QnJpZGdlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiTGFtYmRhIEF1dGhvcml6ZXIiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIExhbWJkYSBMYW1iZGEgRnVuY3Rpb24iCgogICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGxhbWJkYUF1dGhvcml6ZXJTZXJ2aWNlCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBcGkgR2F0ZXdheSIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBbWF6b24gQVBJIEdhdGV3YXkiCgogICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBV1MgTGFtYmRhIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIExhbWJkYSBMYW1iZGEgRnVuY3Rpb24iCgogICAgICAgICAgICAgICAgc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzZXJ2ZXJsZXNzQXBwbGljYXRpb24KICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBbWF6b24gTmVwdHVuZSIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBOZXB0dW5lIgoKICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBkYXRhYmFzZQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIEVDMiIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFQzIiCgogICAgICAgICAgICAgIHVzZXJEaXJlY3RvcnlTZXJ2aWNlSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSB1c2VyRGlyZWN0b3J5U2VydmljZQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQVdTIENsb3VkZnJvbnQiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRGcm9udCIKCiAgICAgICAgICAgICAgc3BhQXBwbGljYXRpb25JbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHNwYUFwcGxpY2F0aW9uCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBV1MgTGFtYmRhIiB7CiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBMYW1iZGEgTGFtYmRhIEZ1bmN0aW9uIgoKICAgICAgICAgICAgICB3ZWJTY3JhcGluZ1NlcnZpY2VJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHdlYlNjcmFwaW5nU2VydmljZQogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CgogICAgICByb3V0ZTUzIC0+IHdhZiAiRm9yd2FyZHMgcmVxdWVzdCB0byAiICJIVFRQUyIKICAgICAgd2FmIC0+IHNwYUFwcGxpY2F0aW9uSW5zdGFuY2UgIkZvcndhcmRzIHJlcXVlc3QgdG8gIiAiSFRUUFMiCiAgICAgIHdhZiAtPiBzZXJ2ZXJsZXNzQXBwbGljYXRpb25JbnN0YW5jZSAiRm9yd2FyZHMgcmVxdWVzdCB0byAiICJIVFRQUyB3aXRoIFNQQVJRTCByZXF1ZXN0IgoKICAgICAgc3BhQXBwbGljYXRpb25JbnN0YW5jZSAtPiBzMyAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIiAiSUFNIFBvbGljeSIKCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IHNzbSAiUmV0cmlldmVzIHNlY3JldCBkYXRhIGZyb20gIiAiSUFNIFBvbGljeSIKICAgICAgc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgLT4gZWxhc3RpQ2FjaGUgIlJldHJpZXZlcyBhbmQgc3RvcmVzIGNhY2hlZCBkYXRhICIgIklBTSBwb2xpY3kiCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IGNsb3Vkd2F0Y2ggIldyaXRlcyBsb2dzIiAiSUFNIHBvbGljeSIKICAgICAgc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgLT4gcXVldWUgIldyaXRlcyBtZXNzYWdlcyB0byAiICJFdmVudCBNZXNzYWdlIgoKICAgICAgcXVldWUgLT4gd2ViU2NyYXBpbmdTZXJ2aWNlSW5zdGFuY2UgIlByb3ZpZGVzIG1lc3NhZ2VzIHRvICIgIkV2ZW50IFRyaWdnZXIiCiAgICAgIGV2ZW50QnJpZGdlIC0+IHdlYlNjcmFwaW5nU2VydmljZUluc3RhbmNlICJTdGFydHMgIiAiRXZlbXQgVHJpZ2dlciIKICAgICAgd2ViU2NyYXBpbmdTZXJ2aWNlSW5zdGFuY2UgLT4gY2xvdWR3YXRjaCAiV3JpdGVzIGxvZ3MiICJJQU0gcG9saWN5IgogICAgICAKICAgICAgdXNlckRpcmVjdG9yeVNlcnZpY2VJbnN0YW5jZSAtPiBlYnMgIlJldHJpZXZlcyBhbmQgcGVyc2lzdHMgZGF0YSB0byAiICJJQU0gcG9saWN5IgogICAgfQogIH0KCiAgICB2aWV3cyB7CiAgICAgIGRlcGxveW1lbnQgd2ViRGV2ZWxvcGVyQ29tcGFuaW9uICJEZXYiICJBbWF6b25XZWJTZXJ2aWNlc0RlcGxveW1lbnQiIHsKICAgICAgICBpbmNsdWRlICoKICAgICAgICAjIGF1dG9sYXlvdXQgbHIKCiAgICAgICAgYW5pbWF0aW9uIHsKICAgICAgICAgIHJvdXRlNTMKICAgICAgICB9CiAgICAgIH0KCiAgICAgIHN0eWxlcyB7CiAgICAgICAgZWxlbWVudCAiRWxlbWVudCIgewogICAgICAgICAgc2hhcGUgcm91bmRlZGJveAogICAgICAgICAgYmFja2dyb3VuZCAjZmZmZmZmCiAgICAgICAgfQogICAgICAgIGVsZW1lbnQgIkNvbnRhaW5lciIgewogICAgICAgICAgYmFja2dyb3VuZCAjZmZmZmZmCiAgICAgICAgfQogICAgICAgIGVsZW1lbnQgIkFwcGxpY2F0aW9uIiB7CiAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICB9CiAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgfQogICAgICB9CgogICAgICB0aGVtZXMgaHR0cHM6Ly9zdGF0aWMuc3RydWN0dXJpenIuY29tL3RoZW1lcy9hbWF6b24td2ViLXNlcnZpY2VzLTIwMjMuMDEuMzEvdGhlbWUuanNvbgogICAgfQoKICAgIGNvbmZpZ3VyYXRpb24gewogICAgICBzY29wZSBzb2Z0d2FyZXN5c3RlbQogICAgfQp9Cg=="
   },
   "configuration" : {
     "scope" : "SoftwareSystem"
@@ -20,37 +21,6 @@
       "description" : "Allows the user to manage and guery, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources.",
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "5",
-        "tags" : "Element,Container,Application",
-        "properties" : {
-          "structurizr.dsl.identifier" : "spaapplication"
-        },
-        "name" : "SPA Application",
-        "description" : "Front-end application that provides an user friendly interface for WebDeveloperCompanion application.",
-        "relationships" : [ {
-          "id" : "8",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "3f937174-5eeb-4242-95b7-405bf6c45589"
-          },
-          "sourceId" : "5",
-          "destinationId" : "4",
-          "description" : "Authenticates user",
-          "technology" : "HTTPS"
-        }, {
-          "id" : "9",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "de735419-87c1-4292-9122-bf68bd7b3be5"
-          },
-          "sourceId" : "5",
-          "destinationId" : "6",
-          "description" : "Request and sends data to",
-          "technology" : "HTTPS"
-        } ],
-        "technology" : "React with Typescript",
-        "documentation" : { }
-      }, {
         "id" : "2",
         "tags" : "Element,Container,Application",
         "properties" : {
@@ -62,7 +32,7 @@
           "id" : "11",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "c60b274d-cb24-4e38-a56b-fbfe0910ddb2"
+            "structurizr.dsl.identifier" : "f6429573-d7f3-4bec-80da-934dfba255a8"
           },
           "sourceId" : "2",
           "destinationId" : "3",
@@ -70,47 +40,6 @@
           "technology" : "SPARQL protocol"
         } ],
         "technology" : "Java",
-        "documentation" : { }
-      }, {
-        "id" : "3",
-        "tags" : "Element,Container,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "database"
-        },
-        "name" : "RDF Database",
-        "description" : "Stores information in RDF format regarding Web development technical content.",
-        "technology" : "RDF Database",
-        "documentation" : { }
-      }, {
-        "id" : "4",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "userdirectoryservice"
-        },
-        "name" : "User Authentication Service",
-        "description" : "Service that handles user authentication and holds sensitive user data in a directory.",
-        "technology" : "Keycloack",
-        "documentation" : { }
-      }, {
-        "id" : "6",
-        "tags" : "Element,Container,Application",
-        "properties" : {
-          "structurizr.dsl.identifier" : "lambdaauthorizerservice"
-        },
-        "name" : "Lambda Authorization Service",
-        "description" : "Service that handles user authorization.",
-        "relationships" : [ {
-          "id" : "10",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "2c14165c-c210-48b5-baaf-10fd8209aed8"
-          },
-          "sourceId" : "6",
-          "destinationId" : "2",
-          "description" : "Authorizes and sends request to",
-          "technology" : "Event Trigger"
-        } ],
-        "technology" : "AWS Lambda Custom Authorizer",
         "documentation" : { }
       }, {
         "id" : "7",
@@ -124,7 +53,7 @@
           "id" : "12",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "7be5b484-6a64-4a4c-9a06-bdd1af942b1d"
+            "structurizr.dsl.identifier" : "4983fb2e-2658-46df-8097-8460ee75f8d1"
           },
           "sourceId" : "7",
           "destinationId" : "3",
@@ -133,6 +62,78 @@
         } ],
         "technology" : "AWS Lambda",
         "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "RDF Database",
+        "description" : "Stores information in RDF format regarding Web development technical content.",
+        "technology" : "RDF Database",
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container,Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "lambdaauthorizerservice"
+        },
+        "name" : "Lambda Authorization Service",
+        "description" : "Service that handles user authorization.",
+        "relationships" : [ {
+          "id" : "10",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ac3c1568-e007-46ff-aaf5-f858e75b4696"
+          },
+          "sourceId" : "6",
+          "destinationId" : "2",
+          "description" : "Authorizes and sends request to",
+          "technology" : "Event Trigger"
+        } ],
+        "technology" : "AWS Lambda Custom Authorizer",
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "userdirectoryservice"
+        },
+        "name" : "User Authentication Service",
+        "description" : "Service that handles user authentication and holds sensitive user data in a directory.",
+        "technology" : "Keycloack",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container,Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "spaapplication"
+        },
+        "name" : "SPA Application",
+        "description" : "Front-end application that provides an user friendly interface for WebDeveloperCompanion application.",
+        "relationships" : [ {
+          "id" : "9",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "57cb8020-ade1-4f66-8303-e8944aa222c9"
+          },
+          "sourceId" : "5",
+          "destinationId" : "6",
+          "description" : "Request and sends data to",
+          "technology" : "HTTPS"
+        }, {
+          "id" : "8",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "39c8f939-1fec-4290-890a-526abaa7c138"
+          },
+          "sourceId" : "5",
+          "destinationId" : "4",
+          "description" : "Authenticates user",
+          "technology" : "HTTPS"
+        } ],
+        "technology" : "React with Typescript",
+        "documentation" : { }
       } ],
       "documentation" : { }
     } ],
@@ -140,7 +141,7 @@
       "id" : "13",
       "tags" : "Element,Deployment Node,Amazon Web Services - Cloud",
       "properties" : {
-        "structurizr.dsl.identifier" : "a949891e-7fcc-4276-90c3-552467e1dc6c"
+        "structurizr.dsl.identifier" : "93c7a95e-3c90-4343-a7b8-cb490e44f57a"
       },
       "name" : "Amazon Web Services",
       "environment" : "Dev",
@@ -158,125 +159,75 @@
           "id" : "17",
           "tags" : "Element,Deployment Node,Amazon Web Services - Virtual Private Cloud",
           "properties" : {
-            "structurizr.dsl.identifier" : "d6c49a4b-b5d3-47ed-ac0e-2ccd2b2c6c0b"
+            "structurizr.dsl.identifier" : "0e68a4c1-7791-49d1-b194-ed4981a64a9a"
           },
           "name" : "VPC",
           "environment" : "Dev",
           "instances" : "1",
           "children" : [ {
-            "id" : "26",
-            "tags" : "Element,Deployment Node,Amazon Web Services - Amazon API Gateway",
+            "id" : "25",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
             "properties" : {
-              "structurizr.dsl.identifier" : "1ca0809f-48a4-4e3f-ae57-5321e3b97984"
+              "structurizr.dsl.identifier" : "b028eee1-309a-406b-be80-9059607e2a8a"
             },
-            "name" : "Api Gateway",
+            "name" : "Lambda Authorizer",
             "environment" : "Dev",
             "instances" : "1",
-            "children" : [ {
-              "id" : "27",
-              "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
+            "containerInstances" : [ {
+              "id" : "26",
+              "tags" : "Container Instance",
               "properties" : {
-                "structurizr.dsl.identifier" : "ae25198c-8ac9-4596-9d15-05a7c5416183"
+                "structurizr.dsl.identifier" : "cb6a2d18-c98f-4417-9956-8a5e18fda48d"
               },
-              "name" : "AWS Lambda",
+              "relationships" : [ {
+                "id" : "30",
+                "sourceId" : "26",
+                "destinationId" : "29",
+                "description" : "Authorizes and sends request to",
+                "technology" : "Event Trigger",
+                "linkedRelationshipId" : "10"
+              } ],
               "environment" : "Dev",
-              "instances" : "1",
-              "containerInstances" : [ {
-                "id" : "28",
-                "tags" : "Container Instance",
-                "properties" : {
-                  "structurizr.dsl.identifier" : "serverlessapplicationinstance"
-                },
-                "relationships" : [ {
-                  "id" : "32",
-                  "sourceId" : "28",
-                  "destinationId" : "31",
-                  "description" : "Queries and persists data to",
-                  "technology" : "SPARQL protocol",
-                  "linkedRelationshipId" : "11"
-                }, {
-                  "id" : "46",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "cfe940b6-8b62-4869-89ce-41c96fdb7e27"
-                  },
-                  "sourceId" : "28",
-                  "destinationId" : "18",
-                  "description" : "Retrieves secret data from",
-                  "technology" : "IAM Policy"
-                }, {
-                  "id" : "47",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "dcec39c4-9a83-49f7-8530-a24cdf2a8412"
-                  },
-                  "sourceId" : "28",
-                  "destinationId" : "19",
-                  "description" : "Retrieves and stores cached data",
-                  "technology" : "IAM policy"
-                }, {
-                  "id" : "48",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "f458e0ce-1b9a-495f-8a7f-50cf6bc4d78b"
-                  },
-                  "sourceId" : "28",
-                  "destinationId" : "20",
-                  "description" : "Writes logs",
-                  "technology" : "IAM policy"
-                }, {
-                  "id" : "49",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "0162eaf1-cdab-4346-8e86-3cb0b2263aaf"
-                  },
-                  "sourceId" : "28",
-                  "destinationId" : "23",
-                  "description" : "Writes messages to",
-                  "technology" : "Event Message"
-                } ],
-                "environment" : "Dev",
-                "deploymentGroups" : [ "Default" ],
-                "instanceId" : 1,
-                "containerId" : "2"
-              } ]
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "6"
             } ]
           }, {
-            "id" : "35",
+            "id" : "36",
             "tags" : "Element,Deployment Node,Amazon Web Services - CloudFront",
             "properties" : {
-              "structurizr.dsl.identifier" : "cd438b7e-e992-415d-8560-8e86e2951617"
+              "structurizr.dsl.identifier" : "b8520f46-39f1-4115-8a63-0c2dd80500f7"
             },
             "name" : "AWS Cloudfront",
             "environment" : "Dev",
             "instances" : "1",
             "containerInstances" : [ {
-              "id" : "36",
+              "id" : "37",
               "tags" : "Container Instance",
               "properties" : {
                 "structurizr.dsl.identifier" : "spaapplicationinstance"
               },
               "relationships" : [ {
-                "id" : "37",
-                "sourceId" : "36",
-                "destinationId" : "34",
-                "description" : "Authenticates user",
-                "technology" : "HTTPS",
-                "linkedRelationshipId" : "8"
-              }, {
                 "id" : "38",
-                "sourceId" : "36",
-                "destinationId" : "25",
+                "sourceId" : "37",
+                "destinationId" : "26",
                 "description" : "Request and sends data to",
                 "technology" : "HTTPS",
                 "linkedRelationshipId" : "9"
               }, {
-                "id" : "45",
+                "id" : "39",
+                "sourceId" : "37",
+                "destinationId" : "35",
+                "description" : "Authenticates user",
+                "technology" : "HTTPS",
+                "linkedRelationshipId" : "8"
+              }, {
+                "id" : "46",
                 "tags" : "Relationship",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "5a7079a1-45db-4fc4-8eb4-b30210173f1f"
+                  "structurizr.dsl.identifier" : "4c7a2d9c-4b98-4ccc-a90e-023bfef3819e"
                 },
-                "sourceId" : "36",
+                "sourceId" : "37",
                 "destinationId" : "21",
                 "description" : "Reads from and writes to",
                 "technology" : "IAM Policy"
@@ -287,57 +238,19 @@
               "containerId" : "5"
             } ]
           }, {
-            "id" : "39",
-            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
-            "properties" : {
-              "structurizr.dsl.identifier" : "e6558a64-71b0-4e82-bcf0-d1a229594aa4"
-            },
-            "name" : "AWS Lambda",
-            "environment" : "Dev",
-            "instances" : "1",
-            "containerInstances" : [ {
-              "id" : "40",
-              "tags" : "Container Instance",
-              "properties" : {
-                "structurizr.dsl.identifier" : "webscrapingserviceinstance"
-              },
-              "relationships" : [ {
-                "id" : "41",
-                "sourceId" : "40",
-                "destinationId" : "31",
-                "description" : "Queries and persists data to",
-                "technology" : "SPARQL protocol",
-                "linkedRelationshipId" : "12"
-              }, {
-                "id" : "51",
-                "tags" : "Relationship",
-                "properties" : {
-                  "structurizr.dsl.identifier" : "9ed1ef81-a8b9-4c61-8e51-48ae6d0f2238"
-                },
-                "sourceId" : "40",
-                "destinationId" : "20",
-                "description" : "Writes logs",
-                "technology" : "IAM policy"
-              } ],
-              "environment" : "Dev",
-              "deploymentGroups" : [ "Default" ],
-              "instanceId" : 1,
-              "containerId" : "7"
-            } ]
-          }, {
-            "id" : "30",
+            "id" : "31",
             "tags" : "Element,Deployment Node,Amazon Web Services - Neptune",
             "properties" : {
-              "structurizr.dsl.identifier" : "56589006-48c8-4cb9-8879-ac79651ee323"
+              "structurizr.dsl.identifier" : "e3505a08-b0c4-4347-9fc0-1b2a4c011e3e"
             },
             "name" : "Amazon Neptune",
             "environment" : "Dev",
             "instances" : "1",
             "containerInstances" : [ {
-              "id" : "31",
+              "id" : "32",
               "tags" : "Container Instance",
               "properties" : {
-                "structurizr.dsl.identifier" : "e3590a7d-474e-415e-ad22-92a7a68b8ea4"
+                "structurizr.dsl.identifier" : "ce95598d-924f-4d68-9a86-5f8d902da396"
               },
               "environment" : "Dev",
               "deploymentGroups" : [ "Default" ],
@@ -345,27 +258,105 @@
               "containerId" : "3"
             } ]
           }, {
-            "id" : "33",
+            "id" : "27",
+            "tags" : "Element,Deployment Node,Amazon Web Services - Amazon API Gateway",
+            "properties" : {
+              "structurizr.dsl.identifier" : "0a5307c9-702d-4eb5-a1de-dfa70e5c714d"
+            },
+            "name" : "Api Gateway",
+            "environment" : "Dev",
+            "instances" : "1",
+            "children" : [ {
+              "id" : "28",
+              "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
+              "properties" : {
+                "structurizr.dsl.identifier" : "1e3aef8c-3dbd-4554-b0ce-8e4d6395a475"
+              },
+              "name" : "AWS Lambda",
+              "environment" : "Dev",
+              "instances" : "1",
+              "containerInstances" : [ {
+                "id" : "29",
+                "tags" : "Container Instance",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "serverlessapplicationinstance"
+                },
+                "relationships" : [ {
+                  "id" : "48",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "9471fbe6-9409-42d5-90e5-cdcc2549a479"
+                  },
+                  "sourceId" : "29",
+                  "destinationId" : "19",
+                  "description" : "Retrieves and stores cached data",
+                  "technology" : "IAM policy"
+                }, {
+                  "id" : "33",
+                  "sourceId" : "29",
+                  "destinationId" : "32",
+                  "description" : "Queries and persists data to",
+                  "technology" : "SPARQL protocol",
+                  "linkedRelationshipId" : "11"
+                }, {
+                  "id" : "49",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "b1bfbf11-89f6-4cbe-ba85-d41fd556a408"
+                  },
+                  "sourceId" : "29",
+                  "destinationId" : "20",
+                  "description" : "Writes logs",
+                  "technology" : "IAM policy"
+                }, {
+                  "id" : "50",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "4970a225-c1e0-40dd-9598-8a44d3ebd93f"
+                  },
+                  "sourceId" : "29",
+                  "destinationId" : "23",
+                  "description" : "Writes messages to",
+                  "technology" : "Event Message"
+                }, {
+                  "id" : "47",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "470b0d8e-1526-4db6-9d00-b133247659f6"
+                  },
+                  "sourceId" : "29",
+                  "destinationId" : "18",
+                  "description" : "Retrieves secret data from",
+                  "technology" : "IAM Policy"
+                } ],
+                "environment" : "Dev",
+                "deploymentGroups" : [ "Default" ],
+                "instanceId" : 1,
+                "containerId" : "2"
+              } ]
+            } ]
+          }, {
+            "id" : "34",
             "tags" : "Element,Deployment Node,Amazon Web Services - EC2",
             "properties" : {
-              "structurizr.dsl.identifier" : "9c34795c-0ce6-4ff0-bf2c-0d5b0df438bf"
+              "structurizr.dsl.identifier" : "20e89a78-7df1-436c-91db-32c41ff17056"
             },
             "name" : "Amazon EC2",
             "environment" : "Dev",
             "instances" : "1",
             "containerInstances" : [ {
-              "id" : "34",
+              "id" : "35",
               "tags" : "Container Instance",
               "properties" : {
                 "structurizr.dsl.identifier" : "userdirectoryserviceinstance"
               },
               "relationships" : [ {
-                "id" : "52",
+                "id" : "54",
                 "tags" : "Relationship",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "d4bd539b-826c-4d8d-847b-e505ce2ce74a"
+                  "structurizr.dsl.identifier" : "07a29b42-fac4-4511-80c2-df834eb97c90"
                 },
-                "sourceId" : "34",
+                "sourceId" : "35",
                 "destinationId" : "22",
                 "description" : "Retrieves and persists data to",
                 "technology" : "IAM policy"
@@ -376,35 +367,63 @@
               "containerId" : "4"
             } ]
           }, {
-            "id" : "24",
+            "id" : "40",
             "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
             "properties" : {
-              "structurizr.dsl.identifier" : "03eadc9f-18b0-413e-b920-db1439a0ca0f"
+              "structurizr.dsl.identifier" : "99ae92f3-23fc-44a4-8b08-225210b749f3"
             },
-            "name" : "Lambda Authorizer",
+            "name" : "AWS Lambda",
             "environment" : "Dev",
             "instances" : "1",
             "containerInstances" : [ {
-              "id" : "25",
+              "id" : "41",
               "tags" : "Container Instance",
               "properties" : {
-                "structurizr.dsl.identifier" : "46459393-f233-4b1c-ab33-3d46735be2ea"
+                "structurizr.dsl.identifier" : "webscrapingserviceinstance"
               },
               "relationships" : [ {
-                "id" : "29",
-                "sourceId" : "25",
-                "destinationId" : "28",
-                "description" : "Authorizes and sends request to",
-                "technology" : "Event Trigger",
-                "linkedRelationshipId" : "10"
+                "id" : "53",
+                "tags" : "Relationship",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "fd57d09c-0943-4e92-9325-391a41619291"
+                },
+                "sourceId" : "41",
+                "destinationId" : "20",
+                "description" : "Writes logs",
+                "technology" : "IAM policy"
+              }, {
+                "id" : "42",
+                "sourceId" : "41",
+                "destinationId" : "32",
+                "description" : "Queries and persists data to",
+                "technology" : "SPARQL protocol",
+                "linkedRelationshipId" : "12"
               } ],
               "environment" : "Dev",
               "deploymentGroups" : [ "Default" ],
               "instanceId" : 1,
-              "containerId" : "6"
+              "containerId" : "7"
             } ]
           } ],
           "infrastructureNodes" : [ {
+            "id" : "19",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - ElastiCache ElastiCache for Redis",
+            "properties" : {
+              "structurizr.dsl.identifier" : "elasticache"
+            },
+            "name" : "ElastiCache for Redis",
+            "description" : "Caching system using redis.",
+            "environment" : "Dev"
+          }, {
+            "id" : "21",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service Bucket",
+            "properties" : {
+              "structurizr.dsl.identifier" : "s3"
+            },
+            "name" : "S3",
+            "description" : "Private S3 bucket for SPA aplication.",
+            "environment" : "Dev"
+          }, {
             "id" : "22",
             "tags" : "Element,Infrastructure Node,Amazon Web Services - Elastic Block Store",
             "properties" : {
@@ -412,6 +431,35 @@
             },
             "name" : "EBS",
             "description" : "Phisical drive memory for EC2",
+            "environment" : "Dev"
+          }, {
+            "id" : "24",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - EventBridge",
+            "properties" : {
+              "structurizr.dsl.identifier" : "eventbridge"
+            },
+            "name" : "Event Bridge",
+            "description" : "Scheduler for automated daemons.",
+            "relationships" : [ {
+              "id" : "52",
+              "tags" : "Relationship",
+              "properties" : {
+                "structurizr.dsl.identifier" : "a57f471d-5b0d-4e24-affe-b7f06c3f9c20"
+              },
+              "sourceId" : "24",
+              "destinationId" : "41",
+              "description" : "Starts",
+              "technology" : "Evemt Trigger"
+            } ],
+            "environment" : "Dev"
+          }, {
+            "id" : "20",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch",
+            "properties" : {
+              "structurizr.dsl.identifier" : "cloudwatch"
+            },
+            "name" : "CloudWatch",
+            "description" : "Logging system for cloud resources.",
             "environment" : "Dev"
           }, {
             "id" : "18",
@@ -431,43 +479,16 @@
             "name" : "Queue",
             "description" : "Messaging queue.",
             "relationships" : [ {
-              "id" : "50",
+              "id" : "51",
               "tags" : "Relationship",
               "properties" : {
-                "structurizr.dsl.identifier" : "1dd9f291-17a9-479e-92f9-e106be7d026c"
+                "structurizr.dsl.identifier" : "35d8ca48-bb32-4563-8194-56521cf1f102"
               },
               "sourceId" : "23",
-              "destinationId" : "40",
+              "destinationId" : "41",
               "description" : "Provides messages to",
               "technology" : "Event Trigger"
             } ],
-            "environment" : "Dev"
-          }, {
-            "id" : "19",
-            "tags" : "Element,Infrastructure Node,Amazon Web Services - ElastiCache ElastiCache for Redis",
-            "properties" : {
-              "structurizr.dsl.identifier" : "elasticache"
-            },
-            "name" : "ElastiCache for Redis",
-            "description" : "Caching system using redis.",
-            "environment" : "Dev"
-          }, {
-            "id" : "21",
-            "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service Bucket",
-            "properties" : {
-              "structurizr.dsl.identifier" : "s3"
-            },
-            "name" : "S3",
-            "description" : "Private S3 bucket for SPA aplication.",
-            "environment" : "Dev"
-          }, {
-            "id" : "20",
-            "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch",
-            "properties" : {
-              "structurizr.dsl.identifier" : "cloudwatch"
-            },
-            "name" : "CloudWatch",
-            "description" : "Logging system for cloud resources.",
             "environment" : "Dev"
           } ]
         } ],
@@ -480,23 +501,23 @@
           "name" : "WAF",
           "description" : "Highly secure web application firewall.",
           "relationships" : [ {
-            "id" : "43",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "56369f7e-d7f5-4915-adf4-fb99026c9fd7"
-            },
-            "sourceId" : "16",
-            "destinationId" : "36",
-            "description" : "Forwards request to",
-            "technology" : "HTTPS"
-          }, {
             "id" : "44",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "912d3b7f-6753-475a-a602-34838c9ad4a3"
+              "structurizr.dsl.identifier" : "a24cd654-bf72-4597-af69-0fea13a01df9"
             },
             "sourceId" : "16",
-            "destinationId" : "28",
+            "destinationId" : "37",
+            "description" : "Forwards request to",
+            "technology" : "HTTPS"
+          }, {
+            "id" : "45",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "856234a8-91bd-44f5-b47d-1afe796c1335"
+            },
+            "sourceId" : "16",
+            "destinationId" : "29",
             "description" : "Forwards request to",
             "technology" : "HTTPS with SPARQL request"
           } ],
@@ -510,10 +531,10 @@
           "name" : "Route 53",
           "description" : "Highly available and scalable cloud DNS service.",
           "relationships" : [ {
-            "id" : "42",
+            "id" : "43",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "4efc13c7-ed95-4257-9805-792944a5256d"
+              "structurizr.dsl.identifier" : "48614f29-f537-49da-8ccf-15c74bed228e"
             },
             "sourceId" : "15",
             "destinationId" : "16",
@@ -546,56 +567,56 @@
         "y" : 336
       }, {
         "id" : "23",
-        "x" : 4035,
-        "y" : 515
+        "x" : 4045,
+        "y" : 540
       }, {
         "id" : "24",
-        "x" : 175,
-        "y" : 175
+        "x" : 5550,
+        "y" : 1045
       }, {
         "id" : "25",
-        "x" : 2489,
-        "y" : 949
-      }, {
-        "id" : "26",
         "x" : 175,
         "y" : 175
+      }, {
+        "id" : "26",
+        "x" : 2489,
+        "y" : 949
       }, {
         "id" : "27",
         "x" : 175,
         "y" : 175
       }, {
         "id" : "28",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "29",
         "x" : 3285,
         "y" : 970
       }, {
-        "id" : "30",
+        "id" : "31",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "31",
+        "id" : "32",
         "x" : 5535,
         "y" : 328
       }, {
-        "id" : "33",
+        "id" : "34",
         "x" : 175,
         "y" : 175
-      }, {
-        "id" : "34",
-        "x" : 2489,
-        "y" : 336
       }, {
         "id" : "35",
-        "x" : 175,
-        "y" : 175
+        "x" : 2489,
+        "y" : 336
       }, {
         "id" : "13",
         "x" : 175,
         "y" : 175
       }, {
         "id" : "36",
-        "x" : 1739,
-        "y" : 1249
+        "x" : 175,
+        "y" : 175
       }, {
         "id" : "14",
         "x" : 175,
@@ -605,13 +626,13 @@
         "x" : 239,
         "y" : 1628
       }, {
+        "id" : "37",
+        "x" : 1739,
+        "y" : 1249
+      }, {
         "id" : "16",
         "x" : 989,
         "y" : 1628
-      }, {
-        "id" : "39",
-        "x" : 175,
-        "y" : 175
       }, {
         "id" : "17",
         "x" : 175,
@@ -626,12 +647,16 @@
         "y" : 1424
       }, {
         "id" : "40",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "41",
         "x" : 4785,
         "y" : 515
       }, {
         "id" : "20",
-        "x" : 5535,
-        "y" : 940
+        "x" : 4790,
+        "y" : 1045
       }, {
         "id" : "21",
         "x" : 2489,
@@ -640,25 +665,21 @@
       "relationships" : [ {
         "id" : "50"
       }, {
-        "id" : "51",
-        "vertices" : [ {
-          "x" : 5339,
-          "y" : 832
-        } ]
-      }, {
-        "id" : "41"
+        "id" : "51"
       }, {
         "id" : "52"
       }, {
         "id" : "42"
       }, {
-        "id" : "43",
-        "vertices" : [ {
-          "x" : 1531,
-          "y" : 1565
-        } ]
+        "id" : "53"
       }, {
-        "id" : "32",
+        "id" : "43"
+      }, {
+        "id" : "54"
+      }, {
+        "id" : "30"
+      }, {
+        "id" : "33",
         "vertices" : [ {
           "x" : 3990,
           "y" : 425
@@ -670,15 +691,13 @@
           "y" : 415
         } ]
       }, {
-        "id" : "29"
-      }, {
-        "id" : "37",
+        "id" : "44",
         "vertices" : [ {
-          "x" : 2385,
-          "y" : 770
+          "x" : 1531,
+          "y" : 1565
         } ]
       }, {
-        "id" : "44",
+        "id" : "45",
         "vertices" : [ {
           "x" : 2385,
           "y" : 2132
@@ -687,21 +706,25 @@
           "y" : 2132
         } ]
       }, {
-        "id" : "45"
+        "id" : "46"
       }, {
-        "id" : "46",
+        "id" : "47",
         "vertices" : [ {
           "x" : 4035,
           "y" : 1874
         } ]
-      }, {
-        "id" : "47"
       }, {
         "id" : "48"
       }, {
         "id" : "49"
       }, {
         "id" : "38"
+      }, {
+        "id" : "39",
+        "vertices" : [ {
+          "x" : 2385,
+          "y" : 770
+        } ]
       } ]
     } ],
     "configuration" : {
@@ -724,6 +747,7 @@
       },
       "themes" : [ "https://static.structurizr.com/themes/amazon-web-services-2023.01.31/theme.json" ],
       "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
       "lastSavedView" : "AmazonWebServicesDeployment"
     }
   }

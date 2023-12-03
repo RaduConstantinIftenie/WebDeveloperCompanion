@@ -81,6 +81,11 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
               tags "Amazon Web Services - Simple Queue Service"
             }
 
+            eventBridge = infrastructureNode "Event Bridge" {
+              description "Scheduler for automated daemons."
+              tags "Amazon Web Services - EventBridge"
+            }
+
             deploymentNode "Lambda Authorizer" {
               tags "Amazon Web Services - AWS Lambda Lambda Function"
 
@@ -136,6 +141,7 @@ workspace "WebDeveloperCompanion" "Deployment diagram" {
       serverlessApplicationInstance -> queue "Writes messages to " "Event Message"
 
       queue -> webScrapingServiceInstance "Provides messages to " "Event Trigger"
+      eventBridge -> webScrapingServiceInstance "Starts " "Evemt Trigger"
       webScrapingServiceInstance -> cloudwatch "Writes logs" "IAM policy"
       
       userDirectoryServiceInstance -> ebs "Retrieves and persists data to " "IAM policy"
