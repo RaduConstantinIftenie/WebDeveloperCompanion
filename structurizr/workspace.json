@@ -1,0 +1,601 @@
+{
+  "id" : 1,
+  "name" : "WebDeveloperCompanion",
+  "description" : "Deployment diagram",
+  "lastModifiedDate" : "2023-12-03T18:53:49Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJXZWJEZXZlbG9wZXJDb21wYW5pb24iICJEZXBsb3ltZW50IGRpYWdyYW0iIHsKCiAgbW9kZWwgewogICAgd2ViRGV2ZWxvcGVyQ29tcGFuaW9uID0gc29mdHdhcmVTeXN0ZW0gIldlYkRldmVsb3BlckNvbXBhbmlvbiIgIkFsbG93cyB0aGUgdXNlciB0byBtYW5hZ2UgYW5kIGd1ZXJ5LCBwdWJsaWMgdGVjaG5pY2FsIGNvbnRlbnQgcmVnYXJkaW5nIFdlYiBkZXZlbG9wbWVudCAoc3VjaCBhcyB0dXRvcmlhbHMsIHByZXNlbnRhdGlvbnMgZXRjLikgZnJvbSBtdWx0aXBsZSBzb3VyY2VzLiIgewogICAgICBzZXJ2ZXJsZXNzQXBwbGljYXRpb24gPSBjb250YWluZXIgIlNlcnZlcmxlc3MgQXBwbGljYXRpb24iICJBbGxvd3MgdGhlIHVzZXIgdG8gbWFuYWdlIGFuZCBxdWVyeSwgcHVibGljIHRlY2huaWNhbCBjb250ZW50IHJlZ2FyZGluZyBXZWIgZGV2ZWxvcG1lbnQgKHN1Y2ggYXMgdHV0b3JpYWxzLCBwcmVzZW50YXRpb25zIGV0Yy4pIGZyb20gbXVsdGlwbGUgc291cmNlcy4iICJKYXZhIiB7CiAgICAgICAgdGFncyAiQXBwbGljYXRpb24iCiAgICAgIH0KCiAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJSREYgRGF0YWJhc2UiICJTdG9yZXMgaW5mb3JtYXRpb24gaW4gUkRGIGZvcm1hdCByZWdhcmRpbmcgV2ViIGRldmVsb3BtZW50IHRlY2huaWNhbCBjb250ZW50LiIgIlJERiBEYXRhYmFzZSIgewogICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICB9CgogICAgICB1c2VyRGlyZWN0b3J5U2VydmljZSA9IGNvbnRhaW5lciAiVXNlciBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlIiAiU2VydmljZSB0aGF0IGhhbmRsZXMgdXNlciBhdXRoZW50aWNhdGlvbiBhbmQgaG9sZHMgc2Vuc2l0aXZlIHVzZXIgZGF0YSBpbiBhIGRpcmVjdG9yeS4iICJLZXljbG9hY2siCiAgICAKICAgICAgc3BhQXBwbGljYXRpb24gPSBjb250YWluZXIgIlNQQSBBcHBsaWNhdGlvbiIgIkZyb250LWVuZCBhcHBsaWNhdGlvbiB0aGF0IHByb3ZpZGVzIGFuIHVzZXIgZnJpZW5kbHkgaW50ZXJmYWNlIGZvciBXZWJEZXZlbG9wZXJDb21wYW5pb24gYXBwbGljYXRpb24uIiAiUmVhY3Qgd2l0aCBUeXBlc2NyaXB0IiB7CiAgICAgICAgdGFncyAiQXBwbGljYXRpb24iCiAgICAgIH0KCiAgICAgIGxhbWJkYUF1dGhvcml6ZXJTZXJ2aWNlID0gY29udGFpbmVyICJMYW1iZGEgQXV0aG9yaXphdGlvbiBTZXJ2aWNlIiAiU2VyaXZjZSB0aGF0IGhhbmRsZXMgdXNlciBhdXRob3JpemF0aW9uLiIgIkFXUyBMYW1iZGEgQ3VzdG9tIEF1dGhvcml6ZXIiIHsKICAgICAgICB0YWdzICJBcHBsaWNhdGlvbiIKICAgICAgfQogICAgfQoKICAgIHNwYUFwcGxpY2F0aW9uIC0+IHVzZXJEaXJlY3RvcnlTZXJ2aWNlICJBdXRoZW50aWNhdGVzIHVzZXIgIiAiSFRUUFMiCiAgICBzcGFBcHBsaWNhdGlvbiAtPiBsYW1iZGFBdXRob3JpemVyU2VydmljZSAiUmVxdWVzdCBhbmQgc2VuZHMgZGF0YSB0byAiICJIVFRQUyIKICAgIGxhbWJkYUF1dGhvcml6ZXJTZXJ2aWNlIC0+IHNlcnZlcmxlc3NBcHBsaWNhdGlvbiAiQXV0aG9yaXplcyBhbmQgc2VuZHMgcmVxdWVzdCB0byAiICJFdmVudCBUcmlnZ2VyIgogICAgc2VydmVybGVzc0FwcGxpY2F0aW9uIC0+IGRhdGFiYXNlICJRdWVyaWVzIGFuZCBwZXJzaXN0cyBkYXRhIHRvICIgIlNQQVJRTCBwcm90b2NvbCIKCgogICAgZGV2ID0gZGVwbG95bWVudEVudmlyb25tZW50ICJEZXYiIHsKICAgICAgZGVwbG95bWVudE5vZGUgIkFtYXpvbiBXZWIgU2VydmljZXMiIHsKICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWQiCgogICAgICAgIHJlZ2lvbiA9IGRlcGxveW1lbnROb2RlICJFVS1Ob3J0aC0xIiB7CiAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUmVnaW9uIgoKICAgICAgICAgIHJvdXRlNTMgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIlJvdXRlIDUzIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIaWdobHkgYXZhaWxhYmxlIGFuZCBzY2FsYWJsZSBjbG91ZCBETlMgc2VydmljZS4iCiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBSb3V0ZSA1MyIKICAgICAgICAgIH0KCiAgICAgICAgICB3YWYgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIldBRiIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGlnaGx5IHNlY3VyZSB3ZWIgYXBwbGljYXRpb24gZmlyZXdhbGwuIgogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gV0FGIgogICAgICAgICAgfQoKICAgICAgICAgIGRlcGxveW1lbnROb2RlICJWUEMiIHsKICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZpcnR1YWwgUHJpdmF0ZSBDbG91ZCIKCiAgICAgICAgICAgIHNzbSA9IGluZnJhc3RydWN0dXJlTm9kZSAiU1NNIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlN5c3RlbSBtYW5hZ2VyIHdpdGggc2VjcmV0IGNvbmZpZ3VyYXRpb24gc3RvcmFnZS4iCiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFN5c3RlbXMgTWFuYWdlciIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxhc3RpQ2FjaGUgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIkVsYXN0aUNhY2hlIGZvciBSZWRpcyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJDYWNoaW5nIHN5c3RlbSB1c2luZyByZWRpcy4iCiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVsYXN0aUNhY2hlIEVsYXN0aUNhY2hlIGZvciBSZWRpcyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgY2xvdWR3YXRjaCA9IGluZnJhc3RydWN0dXJlTm9kZSAiQ2xvdWRXYXRjaCIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJMb2dnaW5nIHN5c3RlbSBmb3IgY2xvdWQgcmVzb3VyY2VzLiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRXYXRjaCIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgczMgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIlMzIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlByaXZhdGUgUzMgYnVja2V0IGZvciBTUEEgYXBsaWNhdGlvbi4iCiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFNpbXBsZSBTdG9yYWdlIFNlcnZpY2UgQnVja2V0IgogICAgICAgICAgICB9CgogICAgICAgICAgICBlYnMgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIkVCUyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJQaGlzaWNhbCBkcml2ZSBtZW1vcnkgZm9yIEVDMiIKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRWxhc3RpYyBCbG9jayBTdG9yZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkxhbWJkYSBBdXRob3JpemVyIiB7CiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBMYW1iZGEgTGFtYmRhIEZ1bmN0aW9uIgoKICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBsYW1iZGFBdXRob3JpemVyU2VydmljZQogICAgICAgICAgICB9CgogICAgICAgICAgICAjIGlhbSA9IGluZnJhc3RydWN0dXJlTm9kZSAiSUFNIiB7CiAgICAgICAgICAgICMgICBkZXNjcmlwdGlvbiAiSWRlbnRpdHkgYW5kIGFjY2VzcyBtYW5hZ2VtZW50IGZvciBBV1MgcmVzb3VyY2VzLiIKICAgICAgICAgICAgIyAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBJQU0gSWRlbnRpdHkgQ2VudGVyIgogICAgICAgICAgICAjIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBcGkgR2F0ZXdheSIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBbWF6b24gQVBJIEdhdGV3YXkiCgogICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBV1MgTGFtYmRhIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIExhbWJkYSBMYW1iZGEgRnVuY3Rpb24iCgogICAgICAgICAgICAgICAgc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzZXJ2ZXJsZXNzQXBwbGljYXRpb24KICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBbWF6b24gTmVwdHVuZSIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBOZXB0dW5lIgoKICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBkYXRhYmFzZQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIEVDMiIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFQzIiCgogICAgICAgICAgICAgIHVzZXJEaXJlY3RvcnlTZXJ2aWNlSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSB1c2VyRGlyZWN0b3J5U2VydmljZQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiQVdTIENsb3VkZnJvbnQiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRGcm9udCIKCiAgICAgICAgICAgICAgc3BhQXBwbGljYXRpb25JbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHNwYUFwcGxpY2F0aW9uCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIH0KCiAgICAgIHJvdXRlNTMgLT4gd2FmICJGb3J3YXJkcyByZXF1ZXN0IHRvICIgIkhUVFBTIgogICAgICB3YWYgLT4gc3BhQXBwbGljYXRpb25JbnN0YW5jZSAiRm9yd2FyZHMgcmVxdWVzdCB0byAiICJIVFRQUyIKICAgICAgc3BhQXBwbGljYXRpb25JbnN0YW5jZSAtPiBzMyAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIiAiSUFNIFBvbGljeSIKCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IHNzbSAiUmV0cmlldmVzIHNlY3JldCBkYXRhIGZyb20gIiAiSUFNIFBvbGljeSIKICAgICAgc2VydmVybGVzc0FwcGxpY2F0aW9uSW5zdGFuY2UgLT4gZWxhc3RpQ2FjaGUgIlJldHJpZXZlcyBhbmQgc3RvcmVzIGNhY2hlZCBkYXRhICIgIklBTSBwb2xpY3kiCiAgICAgIHNlcnZlcmxlc3NBcHBsaWNhdGlvbkluc3RhbmNlIC0+IGNsb3Vkd2F0Y2ggIldyaXRlcyBsb2dzIiAiSUFNIHBvbGljeSIKICAgICAgCiAgICAgIHVzZXJEaXJlY3RvcnlTZXJ2aWNlSW5zdGFuY2UgLT4gZWJzICJSZXRyaWV2ZXMgYW5kIHBlcnNpc3RzIGRhdGEgdG8gIiAiSUFNIHBvbGljeSIKICAgIH0KICB9CgogICAgdmlld3MgewogICAgICBkZXBsb3ltZW50IHdlYkRldmVsb3BlckNvbXBhbmlvbiAiRGV2IiAiQW1hem9uV2ViU2VydmljZXNEZXBsb3ltZW50IiB7CiAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgYXV0b2xheW91dCBscgoKICAgICAgICBhbmltYXRpb24gewogICAgICAgICAgcm91dGU1MwogICAgICAgIH0KICAgICAgfQoKICAgICAgc3R5bGVzIHsKICAgICAgICBlbGVtZW50ICJFbGVtZW50IiB7CiAgICAgICAgICBzaGFwZSByb3VuZGVkYm94CiAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICB9CiAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICBiYWNrZ3JvdW5kICNmZmZmZmYKICAgICAgICB9CiAgICAgICAgZWxlbWVudCAiQXBwbGljYXRpb24iIHsKICAgICAgICAgIGJhY2tncm91bmQgI2ZmZmZmZgogICAgICAgIH0KICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICB9CiAgICAgIH0KCiAgICAgIHRoZW1lcyBodHRwczovL3N0YXRpYy5zdHJ1Y3R1cml6ci5jb20vdGhlbWVzL2FtYXpvbi13ZWItc2VydmljZXMtMjAyMy4wMS4zMS90aGVtZS5qc29uCiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgIHNjb3BlIHNvZnR3YXJlc3lzdGVtCiAgICB9Cn0K"
+  },
+  "configuration" : {
+    "scope" : "SoftwareSystem"
+  },
+  "model" : {
+    "softwareSystems" : [ {
+      "id" : "1",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "webdevelopercompanion"
+      },
+      "name" : "WebDeveloperCompanion",
+      "description" : "Allows the user to manage and guery, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources.",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "3",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "RDF Database",
+        "description" : "Stores information in RDF format regarding Web development technical content.",
+        "technology" : "RDF Database",
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "userdirectoryservice"
+        },
+        "name" : "User Authentication Service",
+        "description" : "Service that handles user authentication and holds sensitive user data in a directory.",
+        "technology" : "Keycloack",
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container,Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "lambdaauthorizerservice"
+        },
+        "name" : "Lambda Authorization Service",
+        "description" : "Serivce that handles user authorization.",
+        "relationships" : [ {
+          "id" : "9",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f499d99d-6b8c-4aff-ae25-9d8c05cf44ac"
+          },
+          "sourceId" : "6",
+          "destinationId" : "2",
+          "description" : "Authorizes and sends request to",
+          "technology" : "Event Trigger"
+        } ],
+        "technology" : "AWS Lambda Custom Authorizer",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container,Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "spaapplication"
+        },
+        "name" : "SPA Application",
+        "description" : "Front-end application that provides an user friendly interface for WebDeveloperCompanion application.",
+        "relationships" : [ {
+          "id" : "8",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "089ac823-7f21-4bba-9bda-fdb0dcadfcfd"
+          },
+          "sourceId" : "5",
+          "destinationId" : "6",
+          "description" : "Request and sends data to",
+          "technology" : "HTTPS"
+        }, {
+          "id" : "7",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ac042124-0c30-430b-a405-3aa9f511cc01"
+          },
+          "sourceId" : "5",
+          "destinationId" : "4",
+          "description" : "Authenticates user",
+          "technology" : "HTTPS"
+        } ],
+        "technology" : "React with Typescript",
+        "documentation" : { }
+      }, {
+        "id" : "2",
+        "tags" : "Element,Container,Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "serverlessapplication"
+        },
+        "name" : "Serverless Application",
+        "description" : "Allows the user to manage and query, public technical content regarding Web development (such as tutorials, presentations etc.) from multiple sources.",
+        "relationships" : [ {
+          "id" : "10",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e8b84b25-0210-4849-bc90-628322b9cb76"
+          },
+          "sourceId" : "2",
+          "destinationId" : "3",
+          "description" : "Queries and persists data to",
+          "technology" : "SPARQL protocol"
+        } ],
+        "technology" : "Java",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "11",
+      "tags" : "Element,Deployment Node,Amazon Web Services - Cloud",
+      "properties" : {
+        "structurizr.dsl.identifier" : "df2ae4ac-b302-4d09-abae-726505c18e6d"
+      },
+      "name" : "Amazon Web Services",
+      "environment" : "Dev",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "12",
+        "tags" : "Element,Deployment Node,Amazon Web Services - Region",
+        "properties" : {
+          "structurizr.dsl.identifier" : "region"
+        },
+        "name" : "EU-North-1",
+        "environment" : "Dev",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "15",
+          "tags" : "Element,Deployment Node,Amazon Web Services - Virtual Private Cloud",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d2c937a7-ec0a-4c39-9b27-cc29390fa763"
+          },
+          "name" : "VPC",
+          "environment" : "Dev",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "32",
+            "tags" : "Element,Deployment Node,Amazon Web Services - CloudFront",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e3c65677-0e22-47d1-ba03-053a3bda3e21"
+            },
+            "name" : "AWS Cloudfront",
+            "environment" : "Dev",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "33",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "spaapplicationinstance"
+              },
+              "relationships" : [ {
+                "id" : "34",
+                "sourceId" : "33",
+                "destinationId" : "22",
+                "description" : "Request and sends data to",
+                "technology" : "HTTPS",
+                "linkedRelationshipId" : "8"
+              }, {
+                "id" : "38",
+                "tags" : "Relationship",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "1d0375ca-bb49-4846-950e-ff990d64076e"
+                },
+                "sourceId" : "33",
+                "destinationId" : "19",
+                "description" : "Reads from and writes to",
+                "technology" : "IAM Policy"
+              }, {
+                "id" : "35",
+                "sourceId" : "33",
+                "destinationId" : "31",
+                "description" : "Authenticates user",
+                "technology" : "HTTPS",
+                "linkedRelationshipId" : "7"
+              } ],
+              "environment" : "Dev",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "5"
+            } ]
+          }, {
+            "id" : "21",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5b678ec5-f1cb-40a5-a842-e7dec55e5965"
+            },
+            "name" : "Lambda Authorizer",
+            "environment" : "Dev",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "22",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "11b02770-bcc7-4937-a39b-680a8e1ac4a6"
+              },
+              "relationships" : [ {
+                "id" : "26",
+                "sourceId" : "22",
+                "destinationId" : "25",
+                "description" : "Authorizes and sends request to",
+                "technology" : "Event Trigger",
+                "linkedRelationshipId" : "9"
+              } ],
+              "environment" : "Dev",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "6"
+            } ]
+          }, {
+            "id" : "30",
+            "tags" : "Element,Deployment Node,Amazon Web Services - EC2",
+            "properties" : {
+              "structurizr.dsl.identifier" : "18b38113-a3f8-4ee3-8931-c13b013879ab"
+            },
+            "name" : "Amazon EC2",
+            "environment" : "Dev",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "31",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "userdirectoryserviceinstance"
+              },
+              "relationships" : [ {
+                "id" : "42",
+                "tags" : "Relationship",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "10d5cd3d-91c9-4cc3-ace5-f6f346aae311"
+                },
+                "sourceId" : "31",
+                "destinationId" : "20",
+                "description" : "Retrieves and persists data to",
+                "technology" : "IAM policy"
+              } ],
+              "environment" : "Dev",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "4"
+            } ]
+          }, {
+            "id" : "23",
+            "tags" : "Element,Deployment Node,Amazon Web Services - Amazon API Gateway",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f05223c3-6bce-427e-8748-69d80637f729"
+            },
+            "name" : "Api Gateway",
+            "environment" : "Dev",
+            "instances" : "1",
+            "children" : [ {
+              "id" : "24",
+              "tags" : "Element,Deployment Node,Amazon Web Services - AWS Lambda Lambda Function",
+              "properties" : {
+                "structurizr.dsl.identifier" : "02504fa6-9d54-420e-a1b8-6b3a410b74e0"
+              },
+              "name" : "AWS Lambda",
+              "environment" : "Dev",
+              "instances" : "1",
+              "containerInstances" : [ {
+                "id" : "25",
+                "tags" : "Container Instance",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "serverlessapplicationinstance"
+                },
+                "relationships" : [ {
+                  "id" : "39",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "38327653-cd4a-44d3-b481-3e31f123e89d"
+                  },
+                  "sourceId" : "25",
+                  "destinationId" : "16",
+                  "description" : "Retrieves secret data from",
+                  "technology" : "IAM Policy"
+                }, {
+                  "id" : "40",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "b078029d-42c3-42e3-99cf-82c612bdac3b"
+                  },
+                  "sourceId" : "25",
+                  "destinationId" : "17",
+                  "description" : "Retrieves and stores cached data",
+                  "technology" : "IAM policy"
+                }, {
+                  "id" : "41",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "36f366ab-66d8-4d44-8dd4-75c99711993c"
+                  },
+                  "sourceId" : "25",
+                  "destinationId" : "18",
+                  "description" : "Writes logs",
+                  "technology" : "IAM policy"
+                }, {
+                  "id" : "29",
+                  "sourceId" : "25",
+                  "destinationId" : "28",
+                  "description" : "Queries and persists data to",
+                  "technology" : "SPARQL protocol",
+                  "linkedRelationshipId" : "10"
+                } ],
+                "environment" : "Dev",
+                "deploymentGroups" : [ "Default" ],
+                "instanceId" : 1,
+                "containerId" : "2"
+              } ]
+            } ]
+          }, {
+            "id" : "27",
+            "tags" : "Element,Deployment Node,Amazon Web Services - Neptune",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d269e082-4ec6-471c-bd8d-831901fa01ee"
+            },
+            "name" : "Amazon Neptune",
+            "environment" : "Dev",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "28",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "acb9e017-878e-4bc3-9b2d-d3d294bcd377"
+              },
+              "environment" : "Dev",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "3"
+            } ]
+          } ],
+          "infrastructureNodes" : [ {
+            "id" : "20",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - Elastic Block Store",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ebs"
+            },
+            "name" : "EBS",
+            "description" : "Phisical drive memory for EC2",
+            "environment" : "Dev"
+          }, {
+            "id" : "18",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch",
+            "properties" : {
+              "structurizr.dsl.identifier" : "cloudwatch"
+            },
+            "name" : "CloudWatch",
+            "description" : "Logging system for cloud resources.",
+            "environment" : "Dev"
+          }, {
+            "id" : "19",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service Bucket",
+            "properties" : {
+              "structurizr.dsl.identifier" : "s3"
+            },
+            "name" : "S3",
+            "description" : "Private S3 bucket for SPA aplication.",
+            "environment" : "Dev"
+          }, {
+            "id" : "16",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - Systems Manager",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ssm"
+            },
+            "name" : "SSM",
+            "description" : "System manager with secret configuration storage.",
+            "environment" : "Dev"
+          }, {
+            "id" : "17",
+            "tags" : "Element,Infrastructure Node,Amazon Web Services - ElastiCache ElastiCache for Redis",
+            "properties" : {
+              "structurizr.dsl.identifier" : "elasticache"
+            },
+            "name" : "ElastiCache for Redis",
+            "description" : "Caching system using redis.",
+            "environment" : "Dev"
+          } ]
+        } ],
+        "infrastructureNodes" : [ {
+          "id" : "14",
+          "tags" : "Element,Infrastructure Node,Amazon Web Services - WAF",
+          "properties" : {
+            "structurizr.dsl.identifier" : "waf"
+          },
+          "name" : "WAF",
+          "description" : "Highly secure web application firewall.",
+          "relationships" : [ {
+            "id" : "37",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5014aa27-2bac-4d25-8ec3-25f607d41a2a"
+            },
+            "sourceId" : "14",
+            "destinationId" : "33",
+            "description" : "Forwards request to",
+            "technology" : "HTTPS"
+          } ],
+          "environment" : "Dev"
+        }, {
+          "id" : "13",
+          "tags" : "Element,Infrastructure Node,Amazon Web Services - Route 53",
+          "properties" : {
+            "structurizr.dsl.identifier" : "route53"
+          },
+          "name" : "Route 53",
+          "description" : "Highly available and scalable cloud DNS service.",
+          "relationships" : [ {
+            "id" : "36",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "57322c19-96d7-4376-a62e-5da5c2234d79"
+            },
+            "sourceId" : "13",
+            "destinationId" : "14",
+            "description" : "Forwards request to",
+            "technology" : "HTTPS"
+          } ],
+          "environment" : "Dev"
+        } ]
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "deploymentViews" : [ {
+      "key" : "AmazonWebServicesDeployment",
+      "order" : 1,
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 4812,
+        "height" : 2853
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Dev",
+      "animations" : [ {
+        "order" : 1,
+        "elements" : [ "11", "12", "13" ]
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 2489,
+        "y" : 1479
+      }, {
+        "id" : "33",
+        "x" : 1739,
+        "y" : 1479
+      }, {
+        "id" : "11",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "23",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "12",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "13",
+        "x" : 239,
+        "y" : 1479
+      }, {
+        "id" : "24",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "14",
+        "x" : 989,
+        "y" : 1479
+      }, {
+        "id" : "25",
+        "x" : 3285,
+        "y" : 1479
+      }, {
+        "id" : "15",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "16",
+        "x" : 4081,
+        "y" : 2079
+      }, {
+        "id" : "27",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "17",
+        "x" : 4081,
+        "y" : 1479
+      }, {
+        "id" : "28",
+        "x" : 4081,
+        "y" : 279
+      }, {
+        "id" : "18",
+        "x" : 4081,
+        "y" : 879
+      }, {
+        "id" : "19",
+        "x" : 2489,
+        "y" : 2079
+      }, {
+        "id" : "30",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "20",
+        "x" : 3285,
+        "y" : 867
+      }, {
+        "id" : "31",
+        "x" : 2489,
+        "y" : 867
+      }, {
+        "id" : "21",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "32",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "29",
+        "vertices" : [ {
+          "x" : 3943,
+          "y" : 1463
+        }, {
+          "x" : 3976,
+          "y" : 596
+        } ]
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "40"
+      }, {
+        "id" : "41",
+        "vertices" : [ {
+          "x" : 3943,
+          "y" : 1463
+        }, {
+          "x" : 3976,
+          "y" : 1329
+        } ]
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "39"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Element",
+          "background" : "#ffffff",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Container",
+          "background" : "#ffffff"
+        }, {
+          "tag" : "Application",
+          "background" : "#ffffff"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/amazon-web-services-2023.01.31/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "AmazonWebServicesDeployment"
+    }
+  }
+}
