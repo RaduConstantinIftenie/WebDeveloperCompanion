@@ -3,7 +3,9 @@
 ## Team
 
 Name: Web Bobber
-Members: Frunza Teodor - Octavian, Iftenie Radu - Constantin
+Members: 
+- Frunza Teodor - Octavian
+- Iftenie Radu - Constantin
 
 ## Blog
 
