@@ -1,17 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { ReactKeycloakProvider } from "@react-keycloak/web";
 import keycloak from "./core/keycloack/config";
 import { AppRouter } from "./core/routes";
+import App from "./App";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <ReactKeycloakProvider authClient={keycloak} autoRefreshToken={true}>
-    <AppRouter />
+    <App>
+      <AppRouter />
+    </App>
   </ReactKeycloakProvider>
 );
 

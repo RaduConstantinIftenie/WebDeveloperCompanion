@@ -1,7 +1,7 @@
 import { useKeycloak } from "@react-keycloak/web";
 import { Link } from "react-router-dom";
 
-const Home = (): JSX.Element => {
+const Home: React.FC = () => {
   const { keycloak, initialized } = useKeycloak();
 
   console.log(keycloak.authenticated);
