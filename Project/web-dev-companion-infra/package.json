@@ -1,9 +1,6 @@
 {
   "name": "web-dev-companion-infra",
   "version": "0.1.0",
-  "bin": {
-    "web-dev-companion-infra": "bin/web-dev-companion-infra.js"
-  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -13,9 +10,10 @@
   "devDependencies": {
     "@types/jest": "^29.5.4",
     "@types/node": "20.5.9",
+    "aws-cdk": "2.96.0",
+    "dotenv": "^16.4.4",
     "jest": "^29.6.4",
     "ts-jest": "^29.1.1",
-    "aws-cdk": "2.96.0",
     "ts-node": "^10.9.1",
     "typescript": "~5.2.2"
   },
