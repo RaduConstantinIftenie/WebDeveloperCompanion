@@ -6,11 +6,13 @@ class Environment {
   public stage: string;
   public awsAccount: string;
   public awsRegion: string;
+  public rdsPort: number;
 
   private constructor() {
     this.stage = this.getVariable("STAGE", true);
     this.awsAccount = this.getVariable("AWS_ACCOUNT", true);
     this.awsRegion = this.getVariable("AWS_REGION", true);
+    this.rdsPort = parseInt(this.getVariable("RDS_PORT", false, "5432"));
   }
 
   public static getInstance() {

@@ -2,8 +2,9 @@ import { Vpc } from "aws-cdk-lib/aws-ec2";
 import { Construct } from "constructs";
 
 import { VpcArguments } from "../types";
+import AwsResource from "../interfaces/awsResource";
 
-export class WedVpc extends Construct {
+export class AwsVpc extends Construct implements AwsResource<Vpc> {
   public resource: Vpc;
 
   constructor(scope: Construct, id: string, props: VpcArguments) {

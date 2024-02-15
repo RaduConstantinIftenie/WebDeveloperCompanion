@@ -1,1 +1,1 @@
-export * from "./vpcTypes";
+export * from "./resourcesTypes";
