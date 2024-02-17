@@ -1,6 +1,7 @@
 import { Peer, Port, SubnetType } from "aws-cdk-lib/aws-ec2";
 import { Stack, StackProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
+import { CfnDBCluster } from "aws-cdk-lib/aws-neptune";
 
 import { environment } from "../config/environment";
 import { AwsCnfKeyPair, AwsEc2, AwsRds, AwsSg, AwsVpc } from "../resources";
@@ -48,7 +49,11 @@ export class WebDevCompanionInfraStack extends Stack {
       securityGroups: [rdsSecurityGroup.resource],
     });
 
-    const cfnKeyPair = new AwsCnfKeyPair(this, "wed-cfnkp", `wed-${stage}-cfnkp`);
+    const cfnKeyPair = new AwsCnfKeyPair(
+      this,
+      "wed-cfnkp",
+      `wed-${stage}-cfnkp`
+    );
 
     const bastionSg = new AwsSg(this, "wed-bastion-sg", {
       securityGroupName: `wed-${stage}-bastion-sg`,
