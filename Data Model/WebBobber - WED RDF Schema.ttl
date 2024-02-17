@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wbwed: <http://wade.web-bobbers.org/wed/> .
+
+wbwed:WedInfoResource rdf:type rdf:Class ;
+rdfs:label "WedInfoResource"@en-US ;
+rdfs:comment "An informational resource which can be provided by the Web Developer Companion."@en-US .
+
+wbwed:title rdf:type rdf:Property ;
+    rdfs:label "title"@en-US ;
+	rdfs:comment "The title of this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .
+
+wbwed:source rdf:type rdf:Property ;
+    rdfs:label "source"@en-US ;
+    rdfs:comment "The origin source of this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .
+
+wbwed:creator rdf:type rdf:Property ;
+    rdfs:label "creator"@en-US ;
+    rdfs:comment "A creator of this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .
+
+wbwed:createdDate rdf:type rdf:Property ;
+    rdfs:label "createdDate"@en-US ;
+    rdfs:comment "The date of creation for this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range sch:Date .
+
+wbwed:description rdf:type rdf:Property ;
+    rdfs:label "description"@en-US ;
+    rdfs:comment "A brief description of the content covered by this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .
+
+wbwed:url rdf:type rdf:Property ;
+    rdfs:label "url"@en-US ;
+	rdfs:comment "The source URL where the content of this resource can be found."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range sch:URL .
+
+wbwed:contentStructure rdf:type rdf:Property ;
+    rdfs:label "contentStructure"@en-US ;
+    rdfs:comment "The way of structuring the content of this info resource."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .
+
+wbwed:coveredTopic rdf:type rdf:Property ;
+    rdfs:label "coveredTopic"@en-US ;
+    rdfs:comment "A topic covered by this info resource. It can be a programmning language or paradigm, a specific framework, etc."@en-US ;
+    rdfs:domain wbwed:WedInfoResource ;
+    rdfs:range rdf:Literal .

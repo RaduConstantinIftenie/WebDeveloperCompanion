@@ -1,0 +1,314 @@
+openapi: 3.0.3
+info:
+  title: Web Developer Companion (WED) - OpenAPI
+  description: |-
+    Web Developer Companion (WED) provides modern solutions for querying programming data related to web development using web semantics technologies, vocabularies and ontologies based on the linked data principles. It offers access to multiple methods of interactions such as UI / UX in React, REST APIs and a SPARQL endpoint, facilitating data ingestion and exporting for any kind of system. 
+    
+    Useful links:
+    - [The WED repository](https://github.com/RaduConstantinIftenie/WebDeveloperCompanion/tree/main)
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+  version: 1.0.0
+tags:
+  - name: Sparql
+    description: API to execute various SPARQL queries.
+  - name: FilterPreferences
+    description: API to handle user preferences on query filters.
+    
+paths:
+  /api/v1/wed/users/{userId}/preferences:
+    parameters:
+      - name: userId
+        in: path
+        description: The id of the user.
+        required: true
+        schema:
+          type: string
+          format: uuid
+    get:
+      summary: Get filtering preferences.
+      description: Retrieve all filtering preferences associated to the specified user.
+      operationId: getFilterPreferencesByUser
+      tags:
+        - FilterPreferences
+      responses:
+        200:
+          description: Gets successfully all filtering preferences.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FilterPreferences'
+        404:
+          description: When the specified user was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    delete:
+      summary: Delete filtering preferences.
+      description: Delete the specified filtering preferences associated to the specified user.
+      operationId: deleteFilterPreferencesByUser
+      tags:
+        - FilterPreferences
+      parameters:
+        - name: filters
+          in: query
+          description: The filtering preferences ids that will be deleted.
+          required: true
+          schema:
+            type: array
+            minItems: 1
+            items:
+              type: string
+              format: uuid
+      responses:
+        204:
+          description: The filtering preferences were deleted successfully.
+        400:
+          description: When the input parameters are invalid.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        404:
+          description: When the specified user was not found or his associated filtering preferences were not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      summary: Create new filtering preferences.
+      description: Create new filtering preferences and associates them to the specified user.
+      operationId: createFilterPreferencesByUser
+      tags:
+        - FilterPreferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FilterPreferences'
+      responses:
+        200:
+          description: Successfully created and associated the filtering preferences.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FilterPreferences'
+        400:
+          description: When the input parameters are invalid.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        404:
+          description: When the specified user was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    put:
+      summary: Update the filtering preferences associated to the user.
+      description: Update the filtering preference which are associated to the specified user.
+      operationId: updateFilterPreferencesByUser
+      tags:
+        - FilterPreferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FilterPreferences'
+      responses:
+        200:
+          description: Successfully updated the associated filtering preferences.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FilterPreferences'
+        400:
+          description: When the input parameters are invalid.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        404:
+          description: When the specified user was not found or the specified filtering preferences were not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/v1/wed/sparql/query:
+    post:
+      summary: Execute a valid SPARQL query.
+      description: Execute a valid SPARQL query which facilitates access to RDF triples by user's custom code.
+      operationId: executeSparqlQuery
+      tags:
+        - Sparql
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        200:
+          description: The SPARQL query was executed successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                description: The SPARQL query results.
+        400:
+          description: The input SPARQL query is invalid.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Any internal server error which may happen while the SPARQL query is executed.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/v1/wed/sparql/configurablequery:
+    post:
+      summary: Execute a valid SPARQL query that is configurable programmatically.
+      description: Execute a valid SPARQL query that is configurable programmatically in order to access the RDF triples data.
+      operationId: executeConfigurableSparqlQuery
+      tags:
+        - Sparql
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfigurableQueryRequest'
+      responses:
+        200:
+          description: The SPARQL query was executed successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                description: The SPARQL query results.
+        400:
+          description: The input SPARQL query is invalid.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Any internal server error which may happen while the SPARQL query is executed.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    FilterPreferences:
+      type: object
+      properties:
+        filters:
+          type: array
+          items:
+            $ref: '#/components/schemas/Filter'
+
+    Filter:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The identifier of a query filter.
+        userId:
+          type: string
+          format: uuid
+          description: The user identifier that associates the filter to a specific user in order to track his filtering preferences.
+        target:
+          type: string
+          enum: [
+            ID,
+            TITLE,
+            SOURCE,
+            CREATOR,
+            CREATED_DATE,
+            DESCRIPTION,
+            URL,
+            CONTENT_STRUCTURE,
+            COVERED_TOPIC
+          ]
+          description: The targeted element from a RDF triple.
+        operationType:
+          type: string
+          enum: [
+            EQUALS,
+            CONTAINS,
+            DATE_IN_RANGE
+          ]
+          description: The operation type to be done on the targeted element from a RDF triple.
+        operationValue:
+          type: string
+          description: The operation value which will be used by the operation type.
+        sortOrder:
+          type: string
+          default: ASC
+          enum: [
+            ASC,
+            DESC
+          ]
+          description: The sort order to be used on the filtering results.
+
+    QueryRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+          description: The identifier of the user that initiated the request.
+        query:
+          type: string
+          description: A SPARQL valid query which has to be executed.
+      required:
+        - userId
+        - query
+
+    ConfigurableQueryRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+          description: The identifier of the user that initiated the request.
+        filterPreferences:
+          $ref: '#/components/schemas/FilterPreferences'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      required:
+        - userId
+
+    Pagination:
+      type: object
+      properties:
+        pageIndex:
+          type: integer
+          format: int64
+          minimum: 0
+          description: A page index which is zero based.
+        pageSize:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 100
+          description: The number of records to be fetched per page.
+
+    ErrorResponse:
+      type: object
+      properties:
+        messsage:
+          type: string
+          description: An error message.

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wbwed: <http://wade.web-bobbers.org/wed/> .
+
+# The following WedInfoResource instances are representative for various public data input sources:
+wbwed:e62d6ef7-f7f2-40ea-8d6d-6b6b158bf439 rdf:type wbwed:WedInfoResource ;
+    wbwed:title "Website creation" ;
+	wbwed:source "ionos digital guide" ;
+	wbwed:description "Read our handy guide to find out which software programs can help you build a homepage and create engaging content." ;
+	wbwed:url "https://www.ionos.com/digitalguide/websites/website-creation/" ;
+    wbwed:contentStructure "website" ;
+    wbwed:coveredTopic "ionos" ;
+	wbwed:coveredTopic "digital guide" ;
+	wbwed:coveredTopic "websites" ;
+	wbwed:coveredTopic "website creation" .
+
+wbwed:52aacc2a-b0f2-4dfa-bc5c-d365e46534c2 rdf:type wbwed:WedInfoResource ;
+	wbwed:title "Tag your website with RDFa according to Schema.org’s guidelines" ;
+	wbwed:source "ionos digital guide" ;
+	wbwed:creator "IONOS editorial team" ;
+	wbwed:createdDate "2016-07-04"^^xsd:date ;
+	wbwed:description "By marking up content with RDFa according to Schema.org’s standards, your machine-readable web presence will be rewarded by web browsers and search engine crawlers." ;
+	wbwed:url "https://www.ionos.com/digitalguide/websites/website-creation/tutorial-rdfa-markup-with-schemaorg/" ;
+    wbwed:contentStructure "article" ;
+    wbwed:coveredTopic "ionos" ;
+	wbwed:coveredTopic "digital guide" ;
+	wbwed:coveredTopic "websites" ;
+	wbwed:coveredTopic "website creation" ;
+	wbwed:coveredTopic "tutorial: rdfa—markup with schema.org" .
+
+wbwed:4eb14cb6-5dd1-4a96-b919-d6b73f1c6e13 rdf:type wbwed:WedInfoResource ;
+	wbwed:title "Build software better, together" ;
+	wbwed:source "github" ;
+	wbwed:creator "github" ;
+	wbwed:description "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects." ;
+	wbwed:url "https://github.com/topics/web-tutorial/" ;
+    wbwed:contentStructure "website" .
+
+wbwed:2c11ce7d-994f-4164-a0c9-a1c0fbcebadc rdf:type wbwed:WedInfoResource ;
+	wbwed:title "GitHub - Furkan-Gulsen/HTML-CSS-JAVASCRIPT: HTML-CSS-JAVASCRIPT" ;
+	wbwed:source "github" ;
+	wbwed:creator "Furkan-Gulsen" ;
+	wbwed:description "HTML-CSS-JAVASCRIPT. Contribute to Furkan-Gulsen/HTML-CSS-JAVASCRIPT development by creating an account on GitHub. HTML - CSS - JS Projects Project examples and code repository for those who are new to html, css and js and want to improve themselves. Note: All projects belong to me. 3D Box 3D Hover Box - Alita Card Accordion Menu 1 Accordion Menu 2 Accordion Menu 3 Accordion Menu 4 Array Accordion Responsive Accordion Slider Bootstrap Sidebar Menu Dark Light Menu Line Menu Animation" ;
+	wbwed:url "https://github.com/Furkan-Gulsen/HTML-CSS-JAVASCRIPT/" ;
+    wbwed:contentStructure "website" ;
+	wbwed:coveredTopic "html-css-javascript" .
+
+wbwed:a0732d4b-4060-479f-8ed7-8a21152eac5e rdf:type wbwed:WedInfoResource ;
+	wbwed:title "Web APIs | MDN" ;
+	wbwed:source "mdn web docs" ;
+	wbwed:creator "mdn web docs" ;
+	wbwed:description "When writing code for the Web, there are a large number of Web APIs available. Below is a list of all the APIs and interfaces (object types) that you may be able to use while developing your Web app or site." ;
+	wbwed:url "https://developer.mozilla.org/en-US/docs/Web/API/" ;
+    wbwed:contentStructure "website" ;
+	wbwed:coveredTopic "web" ;
+	wbwed:coveredTopic "web api" .
+
+wbwed:3ed590fb-19c5-49cb-9a5b-74b2ec8adc9c rdf:type wbwed:WedInfoResource ;
+	wbwed:title "Beacon API - Web APIs | MDN" ;
+	wbwed:source "mdn web docs" ;
+	wbwed:creator "mdn web docs" ;
+	wbwed:description "The Beacon API is used to send an asynchronous and non-blocking request to a web server. The request does not expect a response. Unlike requests made using XMLHttpRequest or the Fetch API, the browser guarantees to initiate beacon requests before the page is unloaded and to run them to completion." ;
+	wbwed:url "https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API/" ;
+    wbwed:contentStructure "website" ;
+	wbwed:coveredTopic "web" ;
+	wbwed:coveredTopic "web api" ;
+	wbwed:coveredTopic "beacon_api" .
+
+wbwed:8064bcdf-8be3-43a5-8ba0-37742a87ee0c rdf:type wbwed:WedInfoResource ;
+	wbwed:title "JavaScript — Dynamic client-side scripting - Learn web development | MDN" ;
+	wbwed:source "mdn web docs" ;
+	wbwed:creator "mdn web docs" ;
+	wbwed:description "JavaScript is a programming language that allows you to implement complex functionalities on web pages. Every time a web page does more than just sit there and display static information for you to look at—displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, or more—you can bet that JavaScript is probably involved." ;
+	wbwed:url "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/" ;
+    wbwed:contentStructure "website" ;
+	wbwed:coveredTopic "learn" ;
+	wbwed:coveredTopic "learn javascript" .
