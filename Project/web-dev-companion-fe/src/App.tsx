@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Content, Header } from "antd/es/layout/layout";
 import Search from "antd/es/input/Search";
 import Sider from "antd/es/layout/Sider";
+import { useKeycloak } from "@react-keycloak/web";
 
 import styles from "./App.module.scss";
 import {
@@ -15,6 +16,9 @@ import {
   theme,
 } from "antd";
 import { ProfileMenuItems } from "./core/enums";
+import { useStore } from "./core/hooks/useGlobalStore";
+import { jwtDecode } from "jwt-decode";
+import { Profile } from "./core/types/globalStore";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const {
@@ -48,6 +52,31 @@ const sideMenuItems: MenuProps["items"] = [
 
 const App: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { keycloak, initialized } = useKeycloak();
+  const { setState } = useStore();
+
+  useEffect(() => {
+    if (initialized && !keycloak.authenticated) {
+      keycloak.login();
+    }
+
+    if (!keycloak.token) {
+      return;
+    }
+
+    const decoded = jwtDecode(keycloak.token as string) as Profile;
+
+    const { user_id, email, realm_access } = decoded;
+    setState({
+      idToken: keycloak.idToken,
+      accessToken: keycloak.token,
+      profile: {
+        user_id,
+        email,
+        realm_access,
+      },
+    });
+  }, [initialized, keycloak.idToken, keycloak.token, setState]);
 
   const items: MenuProps["items"] = [
     {
@@ -64,6 +93,7 @@ const App: React.FC<React.PropsWithChildren> = ({ children }) => {
     {
       label: "Log out",
       key: ProfileMenuItems.Logout,
+      onClick: () => keycloak.logout(),
     },
   ];
 

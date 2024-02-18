@@ -18,7 +18,7 @@ export class AwsEc2 extends Construct implements AwsResource<Instance> {
   constructor(scope: Construct, id: string, props: Ec2BastionArguments) {
     super(scope, id);
 
-    const { vpc, subnetType, securityGroup, keyName } = props;
+    const { vpc, subnetType, securityGroup, keyName, instanceName } = props;
 
     this.resource = new Instance(this, id, {
       instanceType: InstanceType.of(InstanceClass.T2, InstanceSize.MICRO),
@@ -29,7 +29,7 @@ export class AwsEc2 extends Construct implements AwsResource<Instance> {
       },
       securityGroup,
       keyName,
-      instanceName: "cm-rds-interface",
+      instanceName,
     });
   }
 

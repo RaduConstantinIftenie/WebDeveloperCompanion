@@ -68,6 +68,7 @@ export class WebDevCompanionInfraStack extends Stack {
       securityGroup: bastionSg.resource,
       subnetType: SubnetType.PUBLIC,
       keyName: cfnKeyPair.resource.keyName,
+      instanceName: "wed-rds-interface",
     });
     bastionEc2.addUserData("bastionStartup.sh");
   }

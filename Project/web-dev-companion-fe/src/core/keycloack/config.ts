@@ -1,10 +1,9 @@
 import Keycloak from "keycloak-js";
 
 const keycloak = new Keycloak({
-  url: "http://localhost:8080/",
-  realm: "my_test",
-  clientId: "test",
-  
+  url: "http://52.17.196.216:8080/auth",
+  realm: "wed",
+  clientId: "wed",
 });
 
 export default keycloak;

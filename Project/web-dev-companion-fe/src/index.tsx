@@ -6,16 +6,19 @@ import { ReactKeycloakProvider } from "@react-keycloak/web";
 import keycloak from "./core/keycloack/config";
 import { AppRouter } from "./core/routes";
 import App from "./App";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { GlobalStateProvider } from "./core/stores/globalStore";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <ReactKeycloakProvider authClient={keycloak} autoRefreshToken={true}>
-    <App>
-      <AppRouter />
-    </App>
+    <GlobalStateProvider>
+      <App>
+        <AppRouter />
+      </App>
+    </GlobalStateProvider>
   </ReactKeycloakProvider>
 );
 

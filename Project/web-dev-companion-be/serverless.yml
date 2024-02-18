@@ -47,23 +47,60 @@ package:
 functions:
   hello:
     handler: com.serverless.Handler
+    role: IamRoleLambdaExecution
     events:
       - http:
           path: /hello
           method: get
           private: true
+    vpc:
+      securityGroupIds:
+        - sg-027519a263f128e18
+        - sg-0f6c6fd69d3c47824
+      subnetIds:
+        - subnet-051d120ed94397a30
+        - subnet-0ffaa0f795a36ebd5
 
 #    Define function environment variables here
 #    environment:
 #      variable2: value2
 
 # you can add CloudFormation resource templates here
-#resources:
-#  Resources:
-#    NewResource:
-#      Type: AWS::S3::Bucket
-#      Properties:
-#        BucketName: my-new-bucket
+resources:
+  Resources:
+    IamRoleLambdaExecution:
+      Type: 'AWS::IAM::Role'
+      Properties:
+        Path: /
+        AssumeRolePolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service: 
+                  - events.amazonaws.com
+                  - lambda.amazonaws.com
+              Action:
+                - sts:AssumeRole
+        Policies:
+          - PolicyName: cm-be-dev-lambda
+            PolicyDocument:
+              Version: '2012-10-17'
+              Statement:
+                - Effect: Allow
+                  Action:
+                    - logs:CreateLogStream
+                    - logs:CreateLogGroup
+                    - logs:PutLogEvents
+                  Resource: '*'
+                - Effect: Allow
+                  Action:
+                    - ec2:CreateNetworkInterface
+                    - ec2:DescribeNetworkInterfaces
+                    - ec2:DeleteNetworkInterface
+                    - kms:Decrypt
+                  Resource: '*'
+
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
