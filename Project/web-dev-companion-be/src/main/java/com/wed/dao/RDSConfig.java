@@ -1,6 +1,5 @@
 package com.wed.dao;
 
-import com.wed.entity.User;
 import com.wed.entity.UserFilterPreference;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +24,7 @@ public class RDSConfig {
         Map<String, Object> settings = new HashMap<>();
         settings.put(DRIVER, "org.postgresql.Driver");
         settings.put(DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
-        settings.put(URL, System.getenv("DB_URL"));
+        settings.put(URL, getRdsUrl());
         settings.put(DEFAULT_SCHEMA, System.getenv("RDS_DB_SCHEMA_NAME"));
         settings.put(USER, System.getenv("RDS_USER"));
         settings.put(PASS, System.getenv("RDS_PWD"));
@@ -44,7 +43,6 @@ public class RDSConfig {
                 .build();
 
         return new MetadataSources(registry)
-                .addAnnotatedClass(User.class)
                 .addAnnotatedClass(UserFilterPreference.class)
                 .buildMetadata()
                 .buildSessionFactory();

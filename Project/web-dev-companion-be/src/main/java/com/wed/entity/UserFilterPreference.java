@@ -8,8 +8,6 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.io.Serializable;
 import java.util.UUID;
@@ -29,10 +27,9 @@ public class UserFilterPreference extends BaseEntity implements Serializable {
     @Column(name = "ID")
     private UUID id;
 
-    @EqualsAndHashCode.Exclude
-    @ManyToOne
-    @JoinColumn(name = "USER_ID", referencedColumnName = "ID", nullable = false)
-    private User user;
+    @Basic(optional = false)
+    @Column(name = "USER_ID")
+    private UUID userId;
 
     @Enumerated(EnumType.STRING)
     @Basic(optional = false)

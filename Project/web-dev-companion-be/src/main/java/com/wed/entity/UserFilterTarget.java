@@ -1,6 +1,7 @@
 package com.wed.entity;
 
 public enum UserFilterTarget {
+    ID,
     TITLE,
     SOURCE,
     CREATOR,
@@ -8,6 +9,5 @@ public enum UserFilterTarget {
     DESCRIPTION,
     URL,
     CONTENT_STRUCTURE,
-    COVERED_TOPIC,
-    SUBJECT_ID
+    COVERED_TOPIC
 }

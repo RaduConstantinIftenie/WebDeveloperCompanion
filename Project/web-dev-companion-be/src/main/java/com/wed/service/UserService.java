@@ -1,11 +1,8 @@
 package com.wed.service;
 
-import com.wed.dao.UserDao;
-import com.wed.entity.User;
+import com.wed.dao.UserPreferenceDao;
 import com.wed.entity.UserFilterPreference;
-import java.util.Optional;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import org.hibernate.Session;
@@ -14,87 +11,68 @@ import org.hibernate.SessionFactory;
 @AllArgsConstructor
 public class UserService {
     private SessionFactory daoSessionFactory;
-    private UserDao userDao;
+    private UserPreferenceDao userPreferenceDao;
 
-    public Optional<User> getUserById(UUID userId) {
+    public Set<UserFilterPreference> getFilterPreferencesForUser(UUID userId) {
         if (userId != null) {
             try (Session session = daoSessionFactory.openSession()) {
-                return userDao.retrieve(session, userId);
+                var ufps = userPreferenceDao.retrieve(session, userId);
+                return ufps != null ? ufps : new HashSet<>();
             }
         }
 
-        return Optional.empty();
+        return new HashSet<>();
     }
 
-    public boolean userExists(UUID userId) {
+    public boolean existFilterPreferencesForUser(UUID userId) {
         if (userId != null) {
             try (Session session = daoSessionFactory.openSession()) {
-                User user = userDao.retrieve(session, userId).orElse(null);
-                return user != null;
+                var ufps = userPreferenceDao.retrieve(session, userId);
+                return (ufps != null) && !ufps.isEmpty();
             }
         }
 
         return false;
     }
 
-    public void deleteFromUserFilterPreferences(UUID userId, Set<String> filterPreferencesToDelete) {
-        if (userId != null) {
-            try (Session session = daoSessionFactory.openSession()) {
-                User user = userDao.retrieve(session, userId).orElse(null);
-                if (user != null) {
-                    Set<UserFilterPreference> userFilterPreferences = user.getUserFilterPreferences();
-                    Set<UserFilterPreference> userFilterPreferencesToKeep = userFilterPreferences
-                            .stream()
-                            .filter(ufp -> !filterPreferencesToDelete.contains(ufp.getId().toString()))
-                            .collect(Collectors.toSet());
-                    userFilterPreferences.clear();
-                    userFilterPreferences.addAll(userFilterPreferencesToKeep);
-                    userDao.persist(session, user);
-                }
-            }
+    public void deleteUserFilterPreferencesFromUser(Set<String> filterPreferencesToDelete, UUID userId) {
+        try (Session session = daoSessionFactory.openSession()) {
+            var ufps = userPreferenceDao.retrieve(session, userId);
+            List<UserFilterPreference> userFilterPreferencesToDelete = ufps
+                    .stream()
+                    .filter(ufp -> filterPreferencesToDelete.contains(ufp.getId().toString()))
+                    .collect(Collectors.toList());
+            userPreferenceDao.delete(session, userFilterPreferencesToDelete);
         }
     }
 
-    public void addFilterPreferencesToUser(UUID userId, Set<UserFilterPreference> userFilterPreferencesToAdd) {
-        if (userId != null) {
-            try (Session session = daoSessionFactory.openSession()) {
-                User user = userDao.retrieve(session, userId).orElse(null);
-                if (user != null) {
-                    Set<UserFilterPreference> userFilterPreferences = user.getUserFilterPreferences();
-                    for (UserFilterPreference ufpToAdd: userFilterPreferencesToAdd) {
-                        ufpToAdd.setUser(user);
-                        userFilterPreferences.add(ufpToAdd);
-                    }
-                    userDao.persist(session, user);
-                }
-            }
+    public void addFilterPreferencesToUser(Set<UserFilterPreference> userFilterPreferencesToAdd) {
+        try (Session session = daoSessionFactory.openSession()) {
+            userPreferenceDao.persist(session, userFilterPreferencesToAdd);
         }
     }
 
-    public Optional<User> updateFilterPreferencesForUser(UUID userId, Set<UserFilterPreference> userFilterPreferencesToUpdate) {
+    public Set<UserFilterPreference> updateFilterPreferencesForUser(
+            Set<UserFilterPreference> userFilterPreferencesToUpdate, UUID userId) {
         if (userId != null) {
             try (Session session = daoSessionFactory.openSession()) {
-                User user = userDao.retrieve(session, userId).orElse(null);
-                if (user != null) {
-                    Set<UserFilterPreference> userFilterPreferences = user.getUserFilterPreferences();
-                    for (UserFilterPreference ufpToUpdate: userFilterPreferencesToUpdate) {
-                        for (UserFilterPreference ufp: userFilterPreferences) {
-                            if (ufp.getId().equals(ufpToUpdate.getId())) {
-                                ufp.setTarget(ufpToUpdate.getTarget());
-                                ufp.setOperationType(ufpToUpdate.getOperationType());
-                                ufp.setOperationValue(ufpToUpdate.getOperationValue());
-                                ufp.setSortOrder(ufpToUpdate.getSortOrder());
-                                break;
-                            }
+                var ufps = userPreferenceDao.retrieve(session, userId);
+                for (UserFilterPreference ufpToUpdate : userFilterPreferencesToUpdate) {
+                    for (UserFilterPreference ufp : ufps) {
+                        if (ufp.getId().equals(ufpToUpdate.getId())) {
+                            ufp.setTarget(ufpToUpdate.getTarget());
+                            ufp.setOperationType(ufpToUpdate.getOperationType());
+                            ufp.setOperationValue(ufpToUpdate.getOperationValue());
+                            ufp.setSortOrder(ufpToUpdate.getSortOrder());
+                            break;
                         }
                     }
-                    userDao.persist(session, user);
-
-                    return userDao.retrieve(session, userId);
                 }
+                userPreferenceDao.update(session, ufps);
+                return userPreferenceDao.retrieve(session, userId);
             }
         }
 
-        return Optional.empty();
+        return new HashSet<>();
     }
 }

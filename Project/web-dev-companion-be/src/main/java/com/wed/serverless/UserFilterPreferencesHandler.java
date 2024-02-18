@@ -6,10 +6,9 @@ import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.wed.dao.RDSConfig;
-import com.wed.dao.UserDao;
+import com.wed.dao.UserPreferenceDao;
 import com.wed.dto.ErrorResponseDto;
 import com.wed.dto.FilterPreferencesDto;
-import com.wed.entity.User;
 import com.wed.entity.UserFilterPreference;
 import com.wed.mapper.FilterPreferencesMapper;
 import com.wed.mapper.FilterPreferencesMapperImpl;
@@ -27,7 +26,7 @@ import static org.apache.http.HttpStatus.*;
 @Slf4j
 public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 	private final SessionFactory daoSessionFactory = RDSConfig.buildDaoSessionFactory();
-	private final UserService userService = new UserService(daoSessionFactory, new UserDao());
+	private final UserService userService = new UserService(daoSessionFactory, new UserPreferenceDao());
 	private final FilterPreferencesMapper filterPreferencesMapper = new FilterPreferencesMapperImpl();
 
 	@Override
@@ -57,12 +56,13 @@ public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayPr
 		log.info("Received GET filter preferences request for user = {}", userId);
 
 		APIGatewayProxyResponseEvent response;
-		User user = userService.getUserById(userId).orElse(null);
-		if (user != null) {
-			response = ResponseBuilder.buildResponse(SC_OK, filterPreferencesMapper.fromUser(user));
+		var ufps = userService.getFilterPreferencesForUser(userId);
+		if (!ufps.isEmpty()) {
+			response = ResponseBuilder.buildResponse(SC_OK,
+					new FilterPreferencesDto(filterPreferencesMapper.fromUserFilterPreferencesList(ufps)));
 		} else {
 			response = ResponseBuilder.buildResponse(SC_NOT_FOUND, new ErrorResponseDto(
-					String.format("No user found for userId = %s", userId)));
+					String.format("No user filter preferences found for userId = %s", userId)));
 		}
 
 		return response;
@@ -73,16 +73,16 @@ public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayPr
 		log.info("Received DELETE filter preferences request for user = {}", userId);
 
 		APIGatewayProxyResponseEvent response;
-		if (userService.userExists(userId)) {
+		if (userService.existFilterPreferencesForUser(userId)) {
 			TypeReference<Set<String>> tRef = new TypeReference<Set<String>>() {};
 			Set<String> filterPreferencesToDelete = ResponseBuilder
 					.fromJson(input.getQueryStringParameters().get("filters"), tRef);
 
-			userService.deleteFromUserFilterPreferences(userId, filterPreferencesToDelete);
+			userService.deleteUserFilterPreferencesFromUser(filterPreferencesToDelete, userId);
 			response = ResponseBuilder.buildResponse(SC_NO_CONTENT, null);
 		} else {
 			response = ResponseBuilder.buildResponse(SC_NOT_FOUND, new ErrorResponseDto(
-					String.format("No user found for userId = %s", userId)));
+					String.format("No user filter preferences found for userId = %s", userId)));
 		}
 
 		return response;
@@ -93,22 +93,23 @@ public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayPr
 		log.info("Received POST filter preferences request for user = {}", userId);
 
 		APIGatewayProxyResponseEvent response;
-		if (userService.userExists(userId)) {
-			FilterPreferencesDto filterPreferencesDto = ResponseBuilder
-					.fromJson(input.getBody(), FilterPreferencesDto.class);
+		FilterPreferencesDto filterPreferencesDto = ResponseBuilder
+				.fromJson(input.getBody(), FilterPreferencesDto.class);
 
-			Set<UserFilterPreference> userFilterPreferencesToAdd = filterPreferencesDto.getFilters()
-					.stream()
-					.map(filterPreferencesMapper::toUserFilterPreference)
-					.collect(Collectors.toSet());
-
-			userService.addFilterPreferencesToUser(userId, userFilterPreferencesToAdd);
-			User user = userService.getUserById(userId).orElse(null);
-			response = ResponseBuilder.buildResponse(SC_OK, filterPreferencesMapper.fromUser(user));
-		} else {
-			response = ResponseBuilder.buildResponse(SC_NOT_FOUND, new ErrorResponseDto(
-					String.format("No user found for userId = %s", userId)));
+		if (filterPreferencesDto == null || filterPreferencesDto.getFilters() == null ||
+				filterPreferencesDto.getFilters().isEmpty()) {
+			return ResponseBuilder.buildResponse(SC_BAD_REQUEST, new ErrorResponseDto(
+					String.format("Invalid input! No filter preferences provided in the request for user = %s", userId)));
 		}
+		Set<UserFilterPreference> userFilterPreferencesToAdd = filterPreferencesDto.getFilters()
+				.stream()
+				.map(filterPreferencesMapper::toUserFilterPreference)
+				.collect(Collectors.toSet());
+
+		userService.addFilterPreferencesToUser(userFilterPreferencesToAdd);
+		var ufps = userService.getFilterPreferencesForUser(userId);
+		response = ResponseBuilder.buildResponse(SC_OK,
+				new FilterPreferencesDto(filterPreferencesMapper.fromUserFilterPreferencesList(ufps)));
 
 		return response;
 	}
@@ -118,21 +119,26 @@ public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayPr
 		log.info("Received PUT filter preferences request for user = {}", userId);
 
 		APIGatewayProxyResponseEvent response;
-		if (userService.userExists(userId)) {
+		if (userService.existFilterPreferencesForUser(userId)) {
 			FilterPreferencesDto filterPreferencesDto = ResponseBuilder
 					.fromJson(input.getBody(), FilterPreferencesDto.class);
 
+			if (filterPreferencesDto == null || filterPreferencesDto.getFilters() == null ||
+					filterPreferencesDto.getFilters().isEmpty()) {
+				return ResponseBuilder.buildResponse(SC_BAD_REQUEST, new ErrorResponseDto(
+						String.format("Invalid input! No filter preferences provided in the request for user = %s", userId)));
+			}
 			Set<UserFilterPreference> userFilterPreferencesToUpdate = filterPreferencesDto.getFilters()
 					.stream()
 					.map(filterPreferencesMapper::toUserFilterPreference)
 					.collect(Collectors.toSet());
 
-			userService.updateFilterPreferencesForUser(userId, userFilterPreferencesToUpdate);
-			User user = userService.getUserById(userId).orElse(null);
-			response = ResponseBuilder.buildResponse(SC_OK, filterPreferencesMapper.fromUser(user));
+			var ufps = userService.updateFilterPreferencesForUser(userFilterPreferencesToUpdate, userId);
+			response = ResponseBuilder.buildResponse(SC_OK,
+					new FilterPreferencesDto(filterPreferencesMapper.fromUserFilterPreferencesList(ufps)));
 		} else {
 			response = ResponseBuilder.buildResponse(SC_NOT_FOUND, new ErrorResponseDto(
-					String.format("No user found for userId = %s", userId)));
+					String.format("No user filter preferences found for userId = %s", userId)));
 		}
 
 		return response;
