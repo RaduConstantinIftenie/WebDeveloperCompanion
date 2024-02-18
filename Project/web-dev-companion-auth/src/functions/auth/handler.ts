@@ -11,12 +11,8 @@ export const main = async (
   const token = event.authorizationToken;
   const methodArn = event.methodArn;
 
-  console.log("1: ", token);
-
   const decodedToken = decode(token, { complete: true });
-  console.log("2: ", decodedToken);
   const kid = decodedToken.header.kid;
-  console.log("3: ", kid);
 
   const client = new JwksClient({
     jwksUri:
