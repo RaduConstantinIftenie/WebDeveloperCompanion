@@ -4,6 +4,13 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: java17
+  environment:
+    RDS_ENDPOINT: FakeEndpointChangeIt
+    RDS_PORT: FakePortChangeIt
+    RDS_DB_NAME: FakeDbNameChangeIt
+    RDS_DB_SCHEMA_NAME: FakeDbSchemaNameChangeIt
+    RDS_USER: FakeUserChangeIt
+    RDS_PWD: FakePwdChangeIt
   stage: dev
   region: eu-west-1
   logRetentionInDays: 1
@@ -45,13 +52,26 @@ package:
   artifact: target/${self:service}-${self:provider.stage}.jar
 
 functions:
-  hello:
-    handler: com.serverless.Handler
+  UserFilterPreferences:
+    handler: com.wed.serverless.UserFilterPreferencesHandler
     events:
       - http:
-          path: /hello
+          path: /api/v1/wed/users/{userId}/preferences
           method: get
           private: true
+      - http:
+          path: /api/v1/wed/users/{userId}/preferences
+          method: delete
+          private: true
+      - http:
+          path: /api/v1/wed/users/{userId}/preferences
+          method: post
+          private: true
+      - http:
+          path: /api/v1/wed/users/{userId}/preferences
+          method: put
+          private: true
+
 
 #    Define function environment variables here
 #    environment:
