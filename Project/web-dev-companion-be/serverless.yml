@@ -1,4 +1,4 @@
-service: web-dev-companion-be
+service: web-dev-companion-be-v2
 frameworkVersion: '3'
 
 provider:
@@ -16,7 +16,7 @@ provider:
   logRetentionInDays: 1
   apiGateway:
     apiKeys:
-      -  web-dev-companion-api-key
+      -  web-dev-companion-api-key-v2
     usagePlan:
       limit: 5000
       offset: 2
@@ -52,7 +52,7 @@ package:
   artifact: target/${self:service}-${self:provider.stage}.jar
 
 functions:
-  UserFilterPreferences:
+  GetUserFilterPreferences:
     handler: com.wed.serverless.UserFilterPreferencesHandler
     role: IamRoleLambdaExecution
     events:
@@ -65,6 +65,17 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+    vpc:
+      securityGroupIds:
+        - sg-027519a263f128e18
+        - sg-0f6c6fd69d3c47824
+      subnetIds:
+        - subnet-051d120ed94397a30
+        - subnet-0ffaa0f795a36ebd5
+  DeleteUserFilterPreferences:
+    handler: com.wed.serverless.UserFilterPreferencesHandler
+    role: IamRoleLambdaExecution
+    events:
       - http:
           path: /api/v1/wed/users/{userId}/preferences
           method: delete
@@ -74,6 +85,17 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+    vpc:
+      securityGroupIds:
+        - sg-027519a263f128e18
+        - sg-0f6c6fd69d3c47824
+      subnetIds:
+        - subnet-051d120ed94397a30
+        - subnet-0ffaa0f795a36ebd5
+  PostUserFilterPreferences:
+    handler: com.wed.serverless.UserFilterPreferencesHandler
+    role: IamRoleLambdaExecution
+    events:
       - http:
           path: /api/v1/wed/users/{userId}/preferences
           method: post
@@ -83,6 +105,17 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+    vpc:
+      securityGroupIds:
+        - sg-027519a263f128e18
+        - sg-0f6c6fd69d3c47824
+      subnetIds:
+        - subnet-051d120ed94397a30
+        - subnet-0ffaa0f795a36ebd5
+  PutUserFilterPreferences:
+    handler: com.wed.serverless.UserFilterPreferencesHandler
+    role: IamRoleLambdaExecution
+    events:
       - http:
           path: /api/v1/wed/users/{userId}/preferences
           method: put

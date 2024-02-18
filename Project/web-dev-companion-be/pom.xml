@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.serverless</groupId>
-  <artifactId>web-dev-companion-be</artifactId>
+  <artifactId>web-dev-companion-be-v2</artifactId>
   <packaging>jar</packaging>
   <version>dev</version>
-  <name>web-dev-companion-be</name>
+  <name>web-dev-companion-be-v2</name>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>

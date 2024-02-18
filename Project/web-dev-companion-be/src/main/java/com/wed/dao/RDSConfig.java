@@ -35,8 +35,8 @@ public class RDSConfig {
 
         // Should be used only once, in the beginning, to automatically generate the database schema tables.
         // Afterwards, these 2 lines must be commented out.
-        settings.put(HBM2DDL_AUTO, "create-only");
-        settings.put(HBM2DDL_DATABASE_ACTION, "create");
+        // settings.put(HBM2DDL_AUTO, "create-only");
+        // settings.put(HBM2DDL_DATABASE_ACTION, "create");
 
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .applySettings(settings)
