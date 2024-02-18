@@ -52,6 +52,11 @@ functions:
       - http:
           path: /hello
           method: get
+          authorizer:
+            arn: arn:aws:lambda:eu-west-1:851725354931:function:web-dev-companion-auth-dev-auth
+            resultTtlInSeconds: 0
+            identitySource: method.request.header.Authorization
+            type: token
           private: true
     vpc:
       securityGroupIds:
