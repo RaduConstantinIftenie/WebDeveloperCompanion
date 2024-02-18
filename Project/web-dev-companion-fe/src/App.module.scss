@@ -1,0 +1,46 @@
+#header {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+
+  .brand {
+    width: 30%;
+  }
+
+  .menuContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search {
+      width: 50%;
+    }
+
+    .profile {
+      width: 10%;
+      text-align: end;
+    }
+  }
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  .avatar {
+    background-color: "#f56a00";
+  }
+}
+
+.sideMenu {
+  height: calc(100dvh - 64px);
+}
+
+.contentContainer {
+  margin-left: 5px;
+  padding: 16px;
+  border-radius: 5px;
+}
