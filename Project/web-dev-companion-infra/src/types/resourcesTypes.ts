@@ -30,4 +30,5 @@ export type Ec2BastionArguments = {
   subnetType: SubnetType;
   securityGroup: ISecurityGroup;
   keyName: string;
+  instanceName: string;
 };

@@ -1,18 +1,17 @@
 import { useKeycloak } from "@react-keycloak/web";
 import { Link } from "react-router-dom";
+import { useStore } from "../../core/hooks/useGlobalStore";
 
 const Home: React.FC = () => {
   const { keycloak, initialized } = useKeycloak();
+  const {
+    state: { profile },
+  } = useStore();
 
-  console.log(keycloak.authenticated);
+  console.log(profile);
+
   return (
     <>
-      {!keycloak.authenticated ? (
-        <button onClick={() => keycloak.login()}>Log In</button>
-      ) : (
-        <button onClick={() => keycloak.logout()}>Log out</button>
-      )}
-
       <Link to="/sec">To sec</Link>
     </>
   );
