@@ -65,6 +65,10 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+          cors:
+            origin: '*'
+            headers: '*'
+            allowCredentials: false
     vpc:
       securityGroupIds:
         - sg-027519a263f128e18
@@ -85,6 +89,10 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+          cors:
+            origin: '*'
+            headers: '*'
+            allowCredentials: false
     vpc:
       securityGroupIds:
         - sg-027519a263f128e18
@@ -105,6 +113,10 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+          cors:
+            origin: '*'
+            headers: '*'
+            allowCredentials: false
     vpc:
       securityGroupIds:
         - sg-027519a263f128e18
@@ -125,6 +137,10 @@ functions:
             identitySource: method.request.header.Authorization
             type: token
           private: true
+          cors:
+            origin: '*'
+            headers: '*'
+            allowCredentials: false
     vpc:
       securityGroupIds:
         - sg-027519a263f128e18
