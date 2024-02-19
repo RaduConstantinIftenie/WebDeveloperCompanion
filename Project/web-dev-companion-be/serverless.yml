@@ -11,6 +11,8 @@ provider:
     RDS_DB_SCHEMA_NAME: FakeDbSchemaNameChangeIt
     RDS_USER: FakeUserChangeIt
     RDS_PWD: FakePwdChangeIt
+    NEPTUNE_ENDPOINT: FakeEndpointChangeIt
+    NEPTUNE_PORT: FakePortChangeIt
   stage: dev
   region: eu-west-1
   logRetentionInDays: 1
@@ -131,6 +133,30 @@ functions:
       - http:
           path: /api/v1/wed/users/{userId}/preferences
           method: put
+          authorizer:
+            arn: arn:aws:lambda:eu-west-1:851725354931:function:web-dev-companion-auth-dev-auth
+            resultTtlInSeconds: 0
+            identitySource: method.request.header.Authorization
+            type: token
+          private: true
+          cors:
+            origin: '*'
+            headers: '*'
+            allowCredentials: false
+    vpc:
+      securityGroupIds:
+        - sg-027519a263f128e18
+        - sg-0f6c6fd69d3c47824
+      subnetIds:
+        - subnet-051d120ed94397a30
+        - subnet-0ffaa0f795a36ebd5
+  PostSparqlQuery:
+    handler: com.wed.serverless.SparqlQueryHandler
+    role: IamRoleLambdaExecution
+    events:
+      - http:
+          path: /api/v1/wed/sparql/query
+          method: post
           authorizer:
             arn: arn:aws:lambda:eu-west-1:851725354931:function:web-dev-companion-auth-dev-auth
             resultTtlInSeconds: 0

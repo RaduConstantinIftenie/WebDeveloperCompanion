@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.hibernate.SessionFactory;
 import org.hibernate.engine.jdbc.connections.spi.ConnectionProvider;
 
-import static org.apache.http.HttpStatus.*;
+import static org.apache.hc.core5.http.HttpStatus.*;
 
 @Slf4j
 public class UserFilterPreferencesHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {

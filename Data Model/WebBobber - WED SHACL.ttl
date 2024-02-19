@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix wbwed: <http://wade.web-bobbers.org/wed/> .
+
+wbwed:WedInfoResourceShape
+    a sh:NodeShape ;
+    sh:targetClass wbwed:WedInfoResource ;
+    sh:property [
+        sh:path wbwed:title ;
+        sh:datatype xsd:string ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:maxLength 500 ;
+        sh:name "title" ;
+		sh:description "The title of this info resource" ;
+    ] ;
+    sh:property [
+        sh:path wbwed:source ;
+        sh:datatype xsd:string ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:maxLength 150 ;
+        sh:name "source" ;
+		sh:description "The origin source of this info resource" ;
+    ] ;
+	sh:property [
+        sh:path wbwed:creator ;
+        sh:datatype xsd:string ;
+		sh:minCount 0 ;
+		sh:maxLength 150 ;
+        sh:name "creator" ;
+		sh:description "A creator of this info resource" ;
+    ] ;
+	sh:property [
+        sh:path wbwed:createdDate ;
+		sh:datatype xsd:date ;
+		sh:minCount 0 ;
+        sh:maxCount 1 ;
+		sh:name "createdDate" ;
+		sh:description "The date of creation for this info resource" ;
+    ] ;
+	sh:property [
+        sh:path wbwed:description ;
+        sh:datatype xsd:string ;
+		sh:minCount 0 ;
+		sh:maxCount 1 ;
+		sh:maxLength 5000 ;
+        sh:name "description" ;
+		sh:description "A brief description of the content covered by this info resource" ;
+    ] ;
+	sh:property [
+        sh:path wbwed:url ;
+        sh:datatype xsd:string ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:maxLength 2000 ;
+        sh:name "url" ;
+		sh:description "The source URL where the content of this resource can be found" ;
+    ] ;
+	sh:property [
+        sh:path wbwed:contentStructure ;
+        sh:datatype xsd:string ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:maxLength 100 ;
+        sh:name "contentStructure" ;
+		sh:description "The way of structuring the content of this info resource" ;
+    ] ;
+    sh:property [
+        sh:path wbwed:coveredTopic ;
+        sh:datatype xsd:string ;
+		sh:minCount 0 ;
+		sh:maxLength 300 ;
+        sh:name "coveredTopic" ;
+		sh:description "A topic covered by this info resource. It can be a programmning language or paradigm, a specific framework, etc." ;
+    ] .
