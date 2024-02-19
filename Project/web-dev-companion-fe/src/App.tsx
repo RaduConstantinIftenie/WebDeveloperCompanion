@@ -19,6 +19,7 @@ import { ProfileMenuItems } from "./core/enums";
 import { useStore } from "./core/hooks/useGlobalStore";
 import { jwtDecode } from "jwt-decode";
 import { Profile } from "./core/types/globalStore";
+import { SideBar } from "./components";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const {
@@ -32,23 +33,23 @@ const {
   contentContainer,
 } = styles;
 
-const sideMenuItems: MenuProps["items"] = [
-  {
-    key: 0,
-    label: "Favorites",
-    type: "group",
-    children: [
-      {
-        key: 0,
-        label: "Item 1",
-      },
-      {
-        key: 1,
-        label: "Item 2",
-      },
-    ],
-  },
-];
+// const sideMenuItems: MenuProps["items"] = [
+//   {
+//     key: 0,
+//     label: "Favorites",
+//     type: "group",
+//     children: [
+//       {
+//         key: 0,
+//         label: "Item 1",
+//       },
+//       {
+//         key: 1,
+//         label: "Item 2",
+//       },
+//     ],
+//   },
+// ];
 
 const App: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -76,6 +77,10 @@ const App: React.FC<React.PropsWithChildren> = ({ children }) => {
         realm_access,
       },
     });
+
+    localStorage.setItem("token", keycloak.token);
+
+    console.log(keycloak.token);
   }, [initialized, keycloak.idToken, keycloak.token, setState]);
 
   const items: MenuProps["items"] = [
@@ -117,44 +122,29 @@ const App: React.FC<React.PropsWithChildren> = ({ children }) => {
         <Header id={header}>
           <div className={brand}>Web Developer Companion</div>
 
-          <div className={menuContainer}>
-            <Search
-              className={search}
-              placeholder="Search..."
-              loading={false}
-              enterButton
-            />
-            <Dropdown
-              className={profile}
-              menu={{
-                onClick: handleMenuSelect,
-                items,
-              }}
-              trigger={["click"]}
-            >
-              <button className={profileButton}>
-                <Space>
-                  <Avatar
-                    style={{ backgroundColor: "#fde3cf", color: "#f56a00" }}
-                    size="large"
-                  >
-                    U
-                  </Avatar>
-                </Space>
-              </button>
-            </Dropdown>
-          </div>
+          <Dropdown
+            className={profile}
+            menu={{
+              onClick: handleMenuSelect,
+              items,
+            }}
+            trigger={["click"]}
+          >
+            <button className={profileButton}>
+              <Space>
+                <Avatar
+                  style={{ backgroundColor: "#fde3cf", color: "#f56a00" }}
+                  size="large"
+                >
+                  U
+                </Avatar>
+              </Space>
+            </button>
+          </Dropdown>
         </Header>
 
         <Layout>
-          <Sider>
-            <Menu
-              className={sideMenu}
-              theme={isDarkMode ? "dark" : "light"}
-              mode="vertical"
-              items={sideMenuItems}
-            />
-          </Sider>
+          <SideBar />
 
           <Content className={contentContainer}>{children}</Content>
         </Layout>
