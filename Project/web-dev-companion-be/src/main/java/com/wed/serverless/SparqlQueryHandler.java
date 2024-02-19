@@ -35,7 +35,7 @@ public class SparqlQueryHandler implements RequestHandler<APIGatewayProxyRequest
             log.info("Received POST query request from user = {}", queryRequestDto.getUserId());
 
             HttpPost httpPost = new HttpPost(NeptuneConfig.getNeptuneUrl());
-            StringEntity queryStringEntity = new StringEntity(queryRequestDto.getQuery());
+            StringEntity queryStringEntity = new StringEntity("query=" + queryRequestDto.getQuery());
             httpPost.setEntity(queryStringEntity);
             httpPost.setHeader("Accept", "application/json");
             httpPost.setHeader("Content-type", "application/x-www-form-urlencoded");
