@@ -6,7 +6,7 @@ const url =
 const apiKey = "azGBj7C9nraQw3Rx13w5y5dO0mkfHvXI1LhGGwDV";
 
 export const getPreferences = async (userId: string): Promise<Preferences> =>
-  new Promise<Preferences>((resolve, reject) => {
+  await new Promise<Preferences>((resolve, reject) => {
     axios
       .get(`${url}/${userId}/preferences`, {
         headers: {
@@ -22,7 +22,7 @@ export const addPreferences = async (
   userId: string,
   preferences: Preferences
 ): Promise<Preferences> =>
-  new Promise<Preferences>((resolve, reject) => {
+  await new Promise<Preferences>((resolve, reject) => {
     axios
       .post(`${url}/${userId}/preferences`, preferences, {
         headers: {
@@ -38,7 +38,7 @@ export const updatePreferences = async (
   userId: string,
   preferences: Preferences
 ): Promise<Preferences> =>
-  new Promise<Preferences>((resolve, reject) => {
+  await new Promise<Preferences>((resolve, reject) => {
     axios
       .put(`${url}/${userId}/preferences`, preferences, {
         headers: {
@@ -61,7 +61,7 @@ export const deletePreferences = async (
     composedUrl += `?${ids.join("&")}`;
   }
 
-  return new Promise<Preferences>((resolve, reject) => {
+  return await new Promise<Preferences>((resolve, reject) => {
     axios
       .delete(composedUrl, {
         headers: {

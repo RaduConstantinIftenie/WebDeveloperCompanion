@@ -9,8 +9,8 @@ import { useState } from "react";
 import { RangeValue } from "rc-picker/lib/interface";
 import dayjs from "dayjs";
 import { addPreferences } from "../../../../api/preferencesApi";
-import { useKeycloak } from "@react-keycloak/web";
 import { useStore } from "../../../../core/hooks/useGlobalStore";
+import { Filter } from "../../../../core/types/preferenceApiTypes";
 
 const { RangePicker } = DatePicker;
 const { form, datePicker } = styles;
@@ -18,9 +18,11 @@ const { form, datePicker } = styles;
 export const AddForm = ({
   isOpened,
   setIsOpened,
+  addFilter,
 }: {
   isOpened: boolean;
   setIsOpened: React.Dispatch<React.SetStateAction<boolean>>;
+  addFilter: (filter: Filter) => void;
 }) => {
   const targets = Object.keys(RdfSources);
   const sortingTypes = Object.keys(SortingTypes);
@@ -88,19 +90,22 @@ export const AddForm = ({
     } = formData;
 
     const userId = profile?.user_id as string;
+    const filter = {
+      userId,
+      operationType,
+      sortOrder,
+      target,
+      operationValue:
+        target === RdfSources.CREATED_DATE
+          ? `${startDate},${endDate}`
+          : operationValue,
+    };
     await addPreferences(userId, {
-      filters: [
-        {
-          userId,
-          operationType,
-          sortOrder,
-          target,
-          operationValue: target === RdfSources.CREATED_DATE
-            ? `${startDate},${endDate}`
-            : operationValue,
-        },
-      ],
+      filters: [filter],
     });
+    addFilter(filter);
+    setIsOpened(false);
+    window.location.reload();
   };
 
   const generateOperationTypeOptions = () => {
