@@ -107,7 +107,10 @@
             Front-end's architecture aims to provide a modern user experience by
             using a top of the line UI. The project is written using React and
             using the best practices regarding folder structure and component
-            composition and injection.
+            composition and injection. It is build using AntD design which provides
+            a fresh look and feel for users. There are two main pages which facilitate
+            access to user filtering preferences and custom SPARQL queries. The solution
+            integrates with KeyCloak as the primary OIDC.
           </p>
         </section>
 
@@ -118,7 +121,16 @@
             Node.js and provides a highly scalable, available solution for our
             application. The projects have n-tier internal architecture for the
             JAVA projects and pseudo-DDD for Node.js one. The scrapper will be
-            written in python.
+            written in python. The service functionality resides in a couple
+            lambda functions written in Java, with Hibernate support for persisting
+            the user filtering preferences into RDS Postgres. Attention was payed
+            on keeping these components used as lightweight as possible for a lambda to
+            perform optimal. The challenges are on providing a balance between the
+            resources consumtion and the modern frameworks capabilities (session management,
+            ORM, dependency injection, logging capabilities). As middleware between lambdas
+            and RDS Postgres we used Hibernate and JPA, for logging we integrated Lombok and
+            Slf4j with the lambdas Log4j Logger, while the connectivity to AWS Neptune was
+            ensured by the versatility of Apache HTTP Client.
           </p>
         </section>
         <section>
@@ -126,7 +138,10 @@
           <p>
             The infrastructure is bound to the AWS cloud provider and offers a
             serverless approach. Furthermore, we use several components that
-            assure the Security and privacy of our solution.
+            assure the Security and privacy of our solution. Our application infrastructure
+            is build on the serverless model, using a hibrid model between PaaS and IaaS.
+            Additionally we enforced additional security on our cloud resources by keeping them
+            safe behind a VPC.
           </p>
         </section>
       </section>
@@ -153,9 +168,10 @@
                 <ul>
                   <li>React</li>
                   <li>SCSS</li>
-                  <li>ATND</li>
+                  <li>AntD</li>
                   <li>MOBX</li>
                   <li>Typescript</li>
+                  <li>Keycloak</li>
                 </ul>
               </section>
             </li>
@@ -163,7 +179,14 @@
               <section>
                 <h4>Back-end Technologies</h4>
                 <ul>
+                  <li>AWS Lambda</li>
+                  <li>API Gateway</li>
+                  <li>Custom Lambda Authorizer</li>
+                  <li>Api Key</li>
                   <li>Java</li>
+                  <li>Hibernate</li>
+                  <li>Http Apache Client</li>
+                  <li>Mokito & JUnit</li>
                   <li>Node.js</li>
                   <li>Typescript</li>
                   <li>Python</li>
@@ -177,6 +200,7 @@
                 <ul>
                   <li>AWS Neptune</li>
                   <li>Elasticache Redis</li>
+                  <li>RDS Postgres</li>
                 </ul>
               </section>
             </li>
@@ -197,9 +221,9 @@
                   <li>WAF</li>
                   <li>Api Gateway</li>
                   <li>Encryption at rest on S3</li>
-                  <li>Keycloack</li>
+                  <li>Keycloak</li>
                   <li>JWT</li>
-                  <li>Api Gateway Api Key</li>
+                  <li>Api Gateway & Api Key</li>
                   <li>SSM</li>
                 </ul>
               </section>
@@ -212,12 +236,16 @@
           <p>
             The application's main goal is to handle data in a standardized way,
             including both user inserted and external data. The user data is
-            mainly handled by Keycloack and will be stored in its internal state
+            mainly handled by Keycloak and will be stored in its internal state
             and storage system, while the external data will be validated,
             cleaned and stored in AWS Neptune as RDF data. The external data
             will be retrieved from multiple sources using a python service that
             will automatically scrape webpages. Additionally, the data will be
-            cleaned, formatted and grouped into different categories.
+            cleaned, formatted and grouped into different categories. The challenge
+            faced while scrapping data from various input data sources was to identify
+            the right metadata from the HTML/RDFa content and organize it into a general
+            RDF model. We have created our own RDF namespace, a proper RDF schema and
+            a SAHCL validator, all written in Turtle format.
           </p>
         </section>
       </section>
