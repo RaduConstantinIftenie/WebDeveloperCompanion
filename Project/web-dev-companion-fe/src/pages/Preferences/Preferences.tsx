@@ -2,7 +2,7 @@ import { Button, Table, Tooltip } from "antd";
 import { AddForm } from "./components/AddForm/AddForm";
 import { useEffect, useState } from "react";
 import styles from "./Preferences.module.scss";
-import { getPreferences } from "../../api/preferencesApi";
+import { deletePreferences, getPreferences } from "../../api/preferencesApi";
 import { useStore } from "../../core/hooks/useGlobalStore";
 import {
   Filter,
@@ -38,6 +38,13 @@ export const Preferences = () => {
     fetchData();
   }, [profile?.user_id]);
 
+  const handleOnDelete = async (id: string) => {
+    await deletePreferences(profile?.user_id as string, [id]);
+    setPreferences((prev) => ({
+      filters: prev.filters.filter((x) => x.id !== id),
+    }));
+  };
+
   const getDataSource = () => {
     return preferences?.filters?.map((filter, index) => {
       const { id, target, sortOrder, operationValue, operationType } = filter;
@@ -65,6 +72,7 @@ export const Preferences = () => {
                 shape="circle"
                 danger
                 icon={<DeleteOutlined />}
+                onClick={() => handleOnDelete(id as string)}
               />
             </Tooltip>
           </>

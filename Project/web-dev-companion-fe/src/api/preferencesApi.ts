@@ -54,12 +54,12 @@ export const deletePreferences = async (
   userId: string,
   preferenceIds: string[]
 ): Promise<Preferences> => {
-  let composedUrl = `${url}/${userId}/preferences`;
+  let composedUrl = `${url}/${userId}/preferences?filters=["${preferenceIds.join(",")}"]`;
 
-  if (preferenceIds?.length > 0) {
-    const ids = preferenceIds.map((preference) => `filters=${preference}`);
-    composedUrl += `?${ids.join("&")}`;
-  }
+  // if (preferenceIds?.length > 0) {
+  //   const ids = preferenceIds.map((preference) => `filters=${preference}`);
+  //   composedUrl += `?${ids.join("&")}`;
+  // }
 
   return await new Promise<Preferences>((resolve, reject) => {
     axios
